@@ -10,3 +10,18 @@ class Armor(Equipment):
     def __init__(self):
         super().__init__()
 
+        self.ac = 0 # the bonus to armor class
+        self.damge_reduction = 0 # some armor reduces damage taken
+        self.dex_penality = 0 # some armor reduces dexterity bonus on rolls
+        self.type = 0 # light or heavy armor, 0 = light, 1 = heavy
+
+class Weapon(Equipment):
+    def __init__(self):
+        super().__init__()
+        self.dmg = 0 # damage
+        self.dmg_type = 0 # weapon's damage type
+        self.range = 1 # how far can a weapon reach, default = 1 which means it hit anything within 1 space of it
+        # not going to add effective and ineffective range for bows
+        self.ammo_type = 0 # default = 0, if zero, no ammo is needed. 1 = arrows, 2 = bolts, 3 = bullet
+        self.properties = "" # string that contains weapon's properties
+
