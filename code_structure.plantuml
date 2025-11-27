@@ -1,0 +1,156 @@
+@startuml
+
+class Creature {
+  +int level
+  +int combat_prof
+  +int hit_points
+  --
+  +int mgt # might
+  +int dex # dexterity
+  +int inte # intelligence
+  +int cha # charisma
+  +int prime
+  +List~List~bool, int~~ attribute_saves
+  --
+  +int size
+  +int speed
+  +bool canFly
+  +bool canBurrow
+  +bool canClimb
+  +int ap
+  +int num_attacks
+  +List~List~int~~ resistances #[[type, resistance or vulnerability damage]]
+  --
+  +bool isMartial
+  +bool isMagician
+  ***
+  if isMartial{
+    +int fp
+    +List~manuever~ manuevers
+  +Armor armor
+  +Shield shield
+  +List~Weapon~ weapons
+  +List~Ability~ abilities
+  --
+  +int ac
+  +int attack_bonus
+  +int save_dc
+  +int hp
+
+  +calc_prime()
+  +calc_bonuses()
+  +calc_ac()
+}
+
+class Player_Character {
+  +int pc_class # player class id
+  +int species # species id
+  +int vitality
+  +int skill_points
+  +int expertise_points
+  +dataframe skills
+  --
+  +get_class_abilities()
+  +get_starting_equipment(pc_class)
+  +cal_skill_points()
+}
+
+file class_id_dic[
+    <b>class_id.tsv
+    ----
+    class_id | class_name
+]
+
+class Equipment {
+  +int id
+  +int cost
+  +int pp
+}
+
+class Armor {
+  +int ac
+  +int damage_reduction
+  +int dex_penality
+}
+
+class Weapon {
+  +int dmg
+  +List~int~ dmg_type
+  +int range
+  +int ammo_type
+  +string properties
+}
+
+class Shield {
+  +int ac
+  +int hp
+  +int cost
+}
+
+class Ability {
+  +string description
+  ---
+  type refers to offensive, defensive, utility: 0,1,2
+}
+
+
+class Manuever{
+  \*type refers to defensive, offesnive, ect.
+  +int focus_cost
+  +int ap_cost
+  +int type
+  +string description
+}
+
+
+Creature <|-- Player_Character
+Equipment <|-- Armor
+Equipment <|-- Weapon
+Equipment <|-- Shield
+
+
+Creature --> Equipment
+
+
+file weapons[
+    weapons.tsv
+]
+
+file armors[
+    armors.tsv
+]
+
+file shields[
+    shields.tsv
+]
+
+file monster_abilities[
+    monster_abilities.tsv
+]
+
+file species_traits[
+  species_traits.tsv
+]
+
+file size_dict[
+    <b>size_dict
+    ---
+    size_cat | size_value
+    Medium = 0
+    Large = 1
+    Huge = 2
+    Tiny = -2
+    Small = -1
+]
+
+Weapon --> weapons
+Armor --> armors
+Shield --> shields
+Ability --> monster_abilities
+Ability --> species_traits
+Player_Character --> class_id_dic
+Creature --> size_dict
+Creature --> Manuever
+Creature --> Ability
+
+@enduml
