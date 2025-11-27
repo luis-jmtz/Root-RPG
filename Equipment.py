@@ -3,6 +3,8 @@ import pandas as pd
 class Equipment():
     def __init__(self):
         self.id = 0 # int, id of the equipment within its dataset
+        self.name = ""
+        self.description = ""
         self.value = 0 # currency is non standard, so value is a more vague and flexible quality
         self.pp = 0 # power points, represents how much much the object effect's a creature's difficulty
 
@@ -24,4 +26,11 @@ class Weapon(Equipment):
         # not going to add effective and ineffective range for bows
         self.ammo_type = 0 # default = 0, if zero, no ammo is needed. 1 = arrows, 2 = bolts, 3 = bullet
         self.properties = "" # string that contains weapon's properties
+
+class Shield(Equipment):
+    def __init__(self):
+        super().__init__()
+        self.ac = 0 # shields can increase armor class
+        self.hit_points = 0 # creatures can have their shield take damage for them
+
 
