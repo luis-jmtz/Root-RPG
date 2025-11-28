@@ -1,0 +1,17 @@
+target_value	min_value	max_value
+attributes	-5	5
+level	0	5
+size	-2	2
+speed	0	6
+fly_speed	0	6
+burrow_speed	0	6
+climb_speed	0	6
+ap	0	6
+num_attacks	0	4
+focus_points	0	6
+ac	8	25
+weapon_dmg	0	3
+dmg_ability_or_equpiment	0	25
+ac_ability	0	5
+utility_ability	0	5
+hp	1	30
