@@ -17,3 +17,4 @@ utility_ability	0	5
 hp	1	30
 dmg_reduction	0	3
 weapon_range	1	10
+skill_range	-5	11
