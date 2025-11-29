@@ -31,7 +31,7 @@ st.write(f"**Range:** {min_val} to {max_val}")
 # Input for the value to scale
 input_value = st.number_input(
     f"Enter value for {selected_target}:",
-    value=float((min_val + max_val) / 2),
+    value=float((min_val + max_val)),
     step=1.0
 )
 

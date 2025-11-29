@@ -11,9 +11,7 @@ num_attacks	0	4
 focus_points	0	6
 ac	8	25
 weapon_dmg	0	3
-dmg_ability_or_equpiment	0	25
-ac_ability	0	5
-utility_ability	0	5
+attack_bonus	0	7
 hp	1	30
 dmg_reduction	0	3
 weapon_range	1	10
