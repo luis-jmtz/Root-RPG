@@ -32,6 +32,7 @@ class Creature():
         # calculated values
         self.hit_points = 0 # for the moment assume the range is 0 to 20
         self.ac = 8 # 8 is the base value, AC = 8 + combat_prof + dexterity + armor bonus
+        self.attack_bonus # combat_prof + Prime
 
         
 
