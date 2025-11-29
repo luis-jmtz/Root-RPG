@@ -2,4 +2,4 @@ id	name	description	value	pp	ac	type	dmg_reduction
 0	None	No Armor	0	0	0	0	0	0
 1	Padded Armor	Tightly woven cloth padded with tightly packed cotton	2	0.06	1	0	0
 2	Chainmail Shirt	Sturdy metal rings woven into a vest or shirt	3	0.12	2	0	0
-3	Brigandine	Body armor made from hard cloth or leather with thin riveted metal plates covered by the fabric	5	
+3	Brigandine	Body armor made from hard cloth or leather with thin riveted metal plates covered by the fabric	5	0.45	2	0	1
