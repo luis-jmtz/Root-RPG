@@ -14,7 +14,7 @@ class Armor(Equipment):
 
         self.ac = 0 # the bonus to armor class
         self.damge_reduction = 0 # some armor reduces damage taken
-        self.dex_penality = 0 # some armor reduces dexterity bonus on rolls
+        self.stealth_dis = 0 # some armor reduces dexterity bonus on rolls
         self.type = 0 # light or heavy armor, 0 = light, 1 = heavy
 
 class Weapon(Equipment):
