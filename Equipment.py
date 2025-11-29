@@ -22,6 +22,7 @@ class Weapon(Equipment):
         super().__init__()
         self.dmg = 0 # damage
         self.dmg_type = "" # weapon's damage type
+        self.weapon_type = 0 # 0 is for melee, 1 is for ranged weapons
         self.range = 1 # how far can a weapon reach, default = 1 which means it hit anything within 1 space of it
         # not going to add effective and ineffective range for bows
         self.ammo_type = 0 # default = 0, if zero, no ammo is needed. 1 = arrows, 2 = bolts, 3 = bullet
