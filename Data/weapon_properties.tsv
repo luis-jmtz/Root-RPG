@@ -1,3 +1,5 @@
 name	description	pp
 Thrown(X)	Can be thrown up to X spaces	0.11*X
 Holdout	ADV on checks to hide the weapon on your body	0.31
+Impact	You deal +1 damage on Heavy Hits	0.33
+Bonk	You have +1 to hit against creatures wearing Heavy Armor
