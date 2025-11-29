@@ -1,1 +1,3 @@
 id	name	description	dmg	dmg_type	range	ammo_type	properties	value	pp
+0	Unarmed	Fighting without a weapon such as punching or kicking	0	B	1	0	0	0	0
+1	Dagger	A small sharpend blade that is easily hidden
