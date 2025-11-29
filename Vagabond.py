@@ -1,6 +1,6 @@
 from Creatures import Creature
 
-class Player_Character(Creature):
+class Vagabond(Creature):
     def __init__(self):
         super().__init__()
         self.pc_class = 0 # id of player class
@@ -12,3 +12,4 @@ class Player_Character(Creature):
         self.skills = None # a dataframe that stores player skill information
 
         self.inventory = [] # a list of equipment a player holds
+        self.quiver = [] # holds ammunition, only used when a player has a quiver
