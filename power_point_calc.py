@@ -12,7 +12,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the min-max values from your TSV file
-df = pd.read_csv('pp_mid_max.tsv', sep='\t')
+df = pd.read_csv('pp_min_max.tsv', sep='\t')
 
 # Streamlit app
 st.title("Min-Max Scaler")
