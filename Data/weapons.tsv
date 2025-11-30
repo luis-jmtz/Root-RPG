@@ -10,3 +10,4 @@ id	name	description	weapon_type	dmg	dmg_type	range	ammo_type	properties	value	pp
 8	Bow	A simple wooden bow	1	1	P	15	1	-	2	1.98
 9	Crossbow	A wooden crossbow	1	2	P	15	2	Loading(2)	5	1.65
 10	Hand Crossbow	A small crossbow that can be held fired with one hand	1	1	P	5	2	Loading(1), Holdout	0.53
+11	Slingshot	A basic slingshot	1	1	B	4	4	Holdout	1	1.08
