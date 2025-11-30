@@ -29,6 +29,7 @@ class Creature():
         self.armor = None # custom armor objects
         self.shield = None # custom shield objects
         self.weapons = [] # list of weapons objects
+        self.inventory = [] # list of objects a creature is holding
 
         # calculated values
         self.hit_points = 0 # for the moment assume the range is 0 to 20

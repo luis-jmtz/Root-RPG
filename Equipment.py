@@ -11,10 +11,13 @@ weapons = pd.read_csv(r"Data\weapons.tsv",sep="\t")
 class Equipment():
     def __init__(self, id):
         self.id = id # int, id of the equipment within its dataset
-        self.name = ""
-        self.description = ""
-        self.value = 0 # currency is non standard, so value is a more vague and flexible quality
-        self.pp = 0 # power points, represents how much much the object effect's a creature's difficulty
+
+        equipment_values = basic_equipment[basic_equipment["id"] == self.id].iloc[0] # returns a series with values
+
+        self.name = equipment_values.get("name")
+        self.description = equipment_values.get("description")
+        self.value = equipment_values.get("value") # currency is non standard, so value is a more vague and flexible quality
+        self.pp = equipment_values.get("pp") # power points, represents how much much the object effect's a creature's difficulty
 
 class Armor(Equipment):
     def __init__(self):

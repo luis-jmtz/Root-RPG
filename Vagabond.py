@@ -11,5 +11,4 @@ class Vagabond(Creature):
         self.expertise_points = 0
         self.skills = None # a dataframe that stores player skill information
 
-        self.inventory = [] # a list of equipment a player holds
         self.quiver = [] # holds ammunition, only used when a player has a quiver
