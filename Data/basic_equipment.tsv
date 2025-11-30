@@ -1,4 +1,8 @@
 id	name	description	value	pp
 0	0	0	0	0
 1	Quiver	Holds Arrows or Bolts	2	0
-2	Bundle of Arrows	10x Arrows	2	0
+2	Bundle of Arrows	5x Arrows	1	0
+3	Bundle of Bolts	5x Bolts	2	0
+4	Bundle of Cartridges	5x Bullets	3	0
+5	Small Bomb	A pinecone-sized metal ball filled with gunpowder. When lit, spend 1 AP to throw within 5 spaces of you. Any creature within 1 space of the space you chose must make a DC 13 Dexterity save or take 3 Piercing damage, half on a successful save.	2	4
+6	Matchbox	A box of matches. 5 charges, expend a charge and 1 AP to light a match.	1	0
