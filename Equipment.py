@@ -1,8 +1,16 @@
 import pandas as pd
 
+# data imports
+basic_equipment = pd.read_csv(r"Data\basic_equipment.tsv",sep="\t")
+armor = pd.read_csv(r"Data\armor.tsv",sep="\t")
+shields = pd.read_csv(r"Data\shields.tsv",sep="\t")
+weapons = pd.read_csv(r"Data\weapons.tsv",sep="\t")
+
+
+
 class Equipment():
-    def __init__(self):
-        self.id = 0 # int, id of the equipment within its dataset
+    def __init__(self, id):
+        self.id = id # int, id of the equipment within its dataset
         self.name = ""
         self.description = ""
         self.value = 0 # currency is non standard, so value is a more vague and flexible quality

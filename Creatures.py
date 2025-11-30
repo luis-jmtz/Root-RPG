@@ -11,6 +11,7 @@ class Creature():
         self.dex = 0
         self.intell = 0 #intelligence
         self.charisma = 0
+        self.prime = max([self.might, self.dex, self.intell, self.charisma])
 
         # size and movement
         self.size = 0 # goes from -2 to 2, with 0 as the standard, size has no direct effect on abilities
@@ -32,7 +33,7 @@ class Creature():
         # calculated values
         self.hit_points = 0 # for the moment assume the range is 0 to 20
         self.ac = 8 # 8 is the base value, AC = 8 + combat_prof + dexterity + armor bonus
-        self.attack_bonus # combat_prof + Prime
+        self.attack_bonus = 0 # combat_prof + Prime
 
         
 
