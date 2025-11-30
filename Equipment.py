@@ -33,5 +33,6 @@ class Shield(Equipment):
         super().__init__()
         self.ac = 0 # shields can increase armor class
         self.hit_points = 0 # creatures can have their shield take damage for them
+        self.type = 0 # 0 = light shield, 1 = heavy shield
 
 

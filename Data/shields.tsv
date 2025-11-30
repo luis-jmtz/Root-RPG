@@ -1,0 +1,5 @@
+id	name	description	ac	hit_points	type	value	pp
+1	Small Wooden Shield	A small shield primarily made of wood	1	3	0	2	.16
+2	Buckler Shield	A small round metal shield	1	5	0	6	0.23
+3	Kite Shield	A large, almond-shaped shield rounded at the top and curving down to a point or rounded point at the bottom. Primarily made of wood and reinforced with metal bands.	2	5	1	6	0.29
+4	Tower Shield	A large, heavy shield, typically made of wood and metal, that covers a significant portion of the user's body. If your Might score is less than 3, you gain 1 less AC from the shield and your Speed is reduced by the difference between your Might and 3 while using this shield.	2	10	1	15	0.5
