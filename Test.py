@@ -5,4 +5,9 @@ import pandas as pd
 
 
 test = Creature()
-print(test.__dict__)
+
+test.add_basic_equipment(1)
+
+print(test.inventory[0].__dict__)
+
+# print(test.__dict__)

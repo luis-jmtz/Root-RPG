@@ -1,5 +1,6 @@
 import pandas as pd
 import math
+from Equipment import *
 
 class Creature():
     def __init__(self):
@@ -37,6 +38,9 @@ class Creature():
         self.attack_bonus = 0 # combat_prof + Prime
 
         
+    # ---------------- Add Equipment ----------------- #
 
-
+    def add_basic_equipment(self,id):
+        item = Equipment(id)
+        self.inventory.append(item)
 
