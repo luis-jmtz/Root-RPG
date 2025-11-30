@@ -4,4 +4,4 @@ Holdout	ADV on checks to hide the weapon on your body	0.31
 Impact	You deal +1 damage on Heavy Hits	0.33
 Bonk	You have +1 to hit against creatures wearing Heavy Armor	0.14
 Versatile	When wielded two-handed, add +1 to hit	0.14
-Loading(X)	You must spend X AP to to reload this weapon before you can attack with it again	-0.66
+Loading(X)	You must spend X AP to to reload this weapon before you can attack with it again	-0.33*X

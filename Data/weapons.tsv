@@ -5,7 +5,8 @@ id	name	description	weapon_type	dmg	dmg_type	range	ammo_type	properties	value	pp
 3	Club	A thick piece of wood held in one hand	0	1	B	1	0	-	1	0.33
 4	Greatsword	A large sword held in two hands	0	2	S	2	0	Impact	10	1.11
 5	Mace	A one-handed blunt weapon with a heavy metal head	0	1	B	1	0	Bonk	3	0.47
-6	Spear	A pole with a sharpened end	0	1	P/S	1	0	Thrown(6)	1	0.99
+6	Spear	A pole with a sharpened end	0	1	P/S	1	0	Thrown(6), Versatile	1	1.13
 7	Axe	A one-handed axe designed for fighting	0	1	S	0	0	Versatile	2	0.47
 8	Bow	A simple wooden bow	1	1	P	15	1	-	2	1.98
-9	Crossbow	A wooden crossbow	1	2	P	15	1	Loading(2)	5	1.65
+9	Crossbow	A wooden crossbow	1	2	P	15	2	Loading(2)	5	1.65
+10	Hand Crossbow	A small crossbow that can be held fired with one hand	1	1	P	5	2	Loading(1), Holdout	0.53
