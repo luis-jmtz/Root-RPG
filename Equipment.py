@@ -72,12 +72,16 @@ class Weapon(Equipment):
         self.ammo_type = 0 # default = 0, if zero, no ammo is needed. 1 = arrows, 2 = bolts, 3 = bullet, 4 = rock
         self.properties = "" # string that contains weapon's properties
 
-        self.set_weapon_values(self)
+        self.set_weapon_values()
 
 
     def set_weapon_values(self):
         self.dmg = self.data.get("dmg")
         self.dmg_type = self.data.get("dmg_type")
+        self.weapon_type =  self.data.get("weapon_type")
+        self.range = self.data.get("range")
+        self.ammo_type = self.data.get("ammo_type")
+        self.properties = self.data.get("properties")
 
 
 class Shield(Equipment):

@@ -7,11 +7,12 @@ import pandas as pd
 test = Creature()
 
 test.add_basic_equipment(1)
+test.add_weapon(1)
 
-print(test.inventory[0].__dict__)
+print(test.inventory[1].__dict__)
 
 test.equip_armor(1)
 
-print(test.armor.__dict__)
+# print(test.armor.__dict__)
 
 # print(test.__dict__)
