@@ -31,6 +31,7 @@ class Creature():
         self.shield = None # custom shield objects
         self.weapons = [] # list of weapons objects
         self.inventory = [] # list of objects a creature is holding
+        self.abilities = [] # list of ability objects
 
         # calculated values
         self.hit_points = 0 # for the moment assume the range is 0 to 20
@@ -38,6 +39,10 @@ class Creature():
         self.attack_bonus = 0 # combat_prof + Prime
 
         self.dl = 0 # difficulty level: the sum of all of a creature's
+
+    # -------- Calculate Bonuses and PP ------ #
+
+    def calc_ac(self):
 
 
         
