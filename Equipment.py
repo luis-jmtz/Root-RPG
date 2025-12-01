@@ -17,6 +17,7 @@ class Equipment():
         self.description = 0
         self.value = 0 # currency is non standard, so value is a more vague and flexible quality
         self.pp = 0 # power points, represents how much much the object effect's a creature's difficulty
+        self.data = None
 
         self.set_values(equipment_type)
 
@@ -32,12 +33,12 @@ class Equipment():
             case 3:
                 dataset = shields
 
-        data = dataset[dataset["id"] == self.id].iloc[0] # returns a series with values
+        self.data = dataset[dataset["id"] == self.id].iloc[0] # returns a series with values
 
-        self.name = data.get("name")
-        self.description = data.get("description")
-        self.value = data.get("value") # currency is non standard, so value is a more vague and flexible quality
-        self.pp = data.get("pp") # power points, represents how much much the object effect's a creature's difficulty
+        self.name = self.data.get("name")
+        self.description = self.data.get("description")
+        self.value = self.data.get("value") # currency is non standard, so value is a more vague and flexible quality
+        self.pp = self.data.get("pp") # power points, represents how much much the object effect's a creature's difficulty
 
 
 
@@ -49,6 +50,7 @@ class Armor(Equipment):
         self.damge_reduction = 0 # some armor reduces damage taken
         self.stealth_dis = 0 # some armor reduces dexterity bonus on rolls
         self.type = 0 # light or heavy armor, 0 = light, 1 = heavy
+        self.set_armor_values()
 
 
     def set_armor_values(self):
@@ -58,9 +60,10 @@ class Armor(Equipment):
         self.stealth_dis = self.data.get("stealth_dis", 0)
         self.type = self.data.get("type", 0)
 
+
 class Weapon(Equipment):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, id):
+        super().__init__(id, equipment_type=2)
         self.dmg = 0 # damage
         self.dmg_type = "" # weapon's damage type
         self.weapon_type = 0 # 0 is for melee, 1 is for ranged weapons
@@ -68,6 +71,7 @@ class Weapon(Equipment):
         # not going to add effective and ineffective range for bows
         self.ammo_type = 0 # default = 0, if zero, no ammo is needed. 1 = arrows, 2 = bolts, 3 = bullet, 4 = rock
         self.properties = "" # string that contains weapon's properties
+
 
 class Shield(Equipment):
     def __init__(self):
