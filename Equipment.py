@@ -55,10 +55,10 @@ class Armor(Equipment):
 
     def set_armor_values(self):
         # Get the armor data for this specific armor ID
-        self.ac = self.data.get("ac", 0)
-        self.damage_reduction = self.data.get("damage_reduction", 0)
-        self.stealth_dis = self.data.get("stealth_dis", 0)
-        self.type = self.data.get("type", 0)
+        self.ac = self.data.get("ac")
+        self.damage_reduction = self.data.get("damage_reduction")
+        self.stealth_dis = self.data.get("stealth_dis")
+        self.type = self.data.get("type")
 
 
 class Weapon(Equipment):
@@ -71,6 +71,13 @@ class Weapon(Equipment):
         # not going to add effective and ineffective range for bows
         self.ammo_type = 0 # default = 0, if zero, no ammo is needed. 1 = arrows, 2 = bolts, 3 = bullet, 4 = rock
         self.properties = "" # string that contains weapon's properties
+
+        self.set_weapon_values(self)
+
+
+    def set_weapon_values(self):
+        self.dmg = self.data.get("dmg")
+        self.dmg_type = self.data.get("dmg_type")
 
 
 class Shield(Equipment):
