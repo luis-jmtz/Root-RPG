@@ -43,7 +43,29 @@ class Creature():
     # -------- Calculate Bonuses and PP ------ #
 
     def calc_ac(self):
+        # AC = 8 + Combat Proficiency + Dexterity + Armor + Shield + Misc
+        temp_ac = 8 + self.combat_prof + self.dex
+        temp_pp = 0 # also get the pp from armor and shields, pp from abilities will be calculated separately
+        
+        calc_string = f"8 + prof({self.combat_prof}) + dex({self.dex})"
 
+        if self.armor != None:
+            temp_ac += self.armor.ac
+            calc_string += f" + armor({self.armor.ac})"
+            temp_pp += self.armor.pp
+
+        if self.shield != None:
+            temp_ac += self.shield.ac
+            calc_string += f" + shield({self.shield.ac})"
+            temp_pp += self.shield.pp
+
+        # ADDME - add AC from ability
+
+        self.ac = temp_ac
+
+        calc_string += f" = {self.ac}"
+        # print(calc_string)
+        # maybe return pp? later problem
 
         
     # ---------------- Add Equipment ----------------- #

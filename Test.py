@@ -6,17 +6,27 @@ import pandas as pd
 
 test = Creature()
 
-test.add_basic_equipment(1)
-test.add_weapon(1)
+# test.add_basic_equipment(1)
+# test.add_weapon(1)
 
-# print(test.inventory[1].__dict__)
+print(pd.Series(test.__dict__), "\n\n")
+
 
 test.equip_armor(1)
+test.calc_ac()
+print(pd.Series(test.__dict__), "\n\n")
+
 
 test.equip_shield(1)
+test.calc_ac()
+print(pd.Series(test.__dict__), "\n\n")
 
-# print(test.shield.__dict__)
 
-print(type(test.inventory[1]))
+test.dex = 2
+test.calc_ac()
+print(pd.Series(test.__dict__), "\n\n")
 
-# print(test.__dict__)
+
+test.equip_armor(6)
+test.calc_ac()
+print(pd.Series(test.__dict__), "\n\n")
