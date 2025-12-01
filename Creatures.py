@@ -37,6 +37,9 @@ class Creature():
         self.ac = 8 # 8 is the base value, AC = 8 + combat_prof + dexterity + armor bonus
         self.attack_bonus = 0 # combat_prof + Prime
 
+        self.dl = 0 # difficulty level: the sum of all of a creature's
+
+
         
     # ---------------- Add Equipment ----------------- #
 
