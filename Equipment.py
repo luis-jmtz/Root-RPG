@@ -85,10 +85,17 @@ class Weapon(Equipment):
 
 
 class Shield(Equipment):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,id):
+        super().__init__(id, equipment_type=3)
         self.ac = 0 # shields can increase armor class
         self.hit_points = 0 # creatures can have their shield take damage for them
         self.type = 0 # 0 = light shield, 1 = heavy shield
+
+        self.set_shield_values()
+
+    def set_shield_values(self):
+        self.ac = self.data.get("ac")
+        self.hit_points = self.data.get("hit_points")
+        self.type = self.data.get("type")
 
 

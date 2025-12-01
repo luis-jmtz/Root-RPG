@@ -51,3 +51,7 @@ class Creature():
     def add_weapon(self,id):
         weapon = Weapon(id)
         self.inventory.append(weapon)
+
+    def equip_shield(self,id):
+        shield = Shield(id)
+        self.shield = shield

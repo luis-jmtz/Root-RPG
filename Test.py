@@ -13,6 +13,8 @@ print(test.inventory[1].__dict__)
 
 test.equip_armor(1)
 
-# print(test.armor.__dict__)
+test.equip_shield(1)
+
+print(test.shield.__dict__)
 
 # print(test.__dict__)
