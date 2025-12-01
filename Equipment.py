@@ -8,25 +8,55 @@ weapons = pd.read_csv(r"Data\weapons.tsv",sep="\t")
 
 
 
+# equipment types: 0 = basic, 1 = armor, 2 = Weapon, 3 = Shield
+
 class Equipment():
-    def __init__(self, id):
+    def __init__(self, id, equipment_type):
         self.id = id # int, id of the equipment within its dataset
+        self.name = 0
+        self.description = 0
+        self.value = 0 # currency is non standard, so value is a more vague and flexible quality
+        self.pp = 0 # power points, represents how much much the object effect's a creature's difficulty
 
-        equipment_values = basic_equipment[basic_equipment["id"] == self.id].iloc[0] # returns a series with values
+        self.set_values(equipment_type)
 
-        self.name = equipment_values.get("name")
-        self.description = equipment_values.get("description")
-        self.value = equipment_values.get("value") # currency is non standard, so value is a more vague and flexible quality
-        self.pp = equipment_values.get("pp") # power points, represents how much much the object effect's a creature's difficulty
+    def set_values(self, equipment_type):
+
+        match equipment_type:
+            case 0:
+                dataset = basic_equipment
+            case 1:
+                dataset = armor
+            case 2:
+                dataset = weapons
+            case 3:
+                dataset = shields
+
+        data = dataset[dataset["id"] == self.id].iloc[0] # returns a series with values
+
+        self.name = data.get("name")
+        self.description = data.get("description")
+        self.value = data.get("value") # currency is non standard, so value is a more vague and flexible quality
+        self.pp = data.get("pp") # power points, represents how much much the object effect's a creature's difficulty
+
+
 
 class Armor(Equipment):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,id):
+        super().__init__(id, equipment_type=1)
 
         self.ac = 0 # the bonus to armor class
         self.damge_reduction = 0 # some armor reduces damage taken
         self.stealth_dis = 0 # some armor reduces dexterity bonus on rolls
         self.type = 0 # light or heavy armor, 0 = light, 1 = heavy
+
+
+    def set_armor_values(self):
+        # Get the armor data for this specific armor ID
+        self.ac = self.data.get("ac", 0)
+        self.damage_reduction = self.data.get("damage_reduction", 0)
+        self.stealth_dis = self.data.get("stealth_dis", 0)
+        self.type = self.data.get("type", 0)
 
 class Weapon(Equipment):
     def __init__(self):

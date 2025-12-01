@@ -41,6 +41,9 @@ class Creature():
     # ---------------- Add Equipment ----------------- #
 
     def add_basic_equipment(self,id):
-        item = Equipment(id)
+        item = Equipment(id,0)
         self.inventory.append(item)
 
+    def equip_armor(self, id):
+        armor = Armor(id)
+        self.armor = armor
