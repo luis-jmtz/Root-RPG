@@ -1,0 +1,5 @@
+id	species_id	name	description	pp
+1	1	Keen Nose	You have ADV on checks to that rely on use your sense of smell.	0.3125
+2	1	Pack Hunter	A number of times equal to your Proficiency per day, you can give yourself or an ally ADV on an attack if you are adjacent to them.	0.7143
+3	1	Protect the Pack	Once per Long Rest, if an Attack is going to hit an adjacent creature, you can swap places with them making you the target of the attack instead.	0
+4	2	Sharp Claws	When you make an Unarmed Attack your base damage is 1 and the damage type can be Bludgeoning or Slashing.	
