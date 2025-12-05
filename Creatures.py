@@ -5,7 +5,7 @@ from Equipment import *
 class Creature():
     def __init__(self):
         self.level = 0
-        self.combat_prof = 1 + math.floor(0.5 * self.level)
+        self.prof = 1 + math.floor(0.5 * self.level)
 
         # attributes, range between -5 and 5
         self.might = 0
@@ -35,8 +35,8 @@ class Creature():
 
         # calculated values
         self.hit_points = 0 # for the moment assume the range is 0 to 20
-        self.ac = 8 # 8 is the base value, AC = 8 + combat_prof + dexterity + armor bonus
-        self.attack_bonus = 0 # combat_prof + Prime
+        self.ac = 8 # 8 is the base value, AC = 8 + prof + dexterity + armor bonus
+        self.attack_bonus = 0 # prof + Prime
 
         self.dl = 0 # difficulty level: the sum of all of a creature's
 
@@ -44,10 +44,10 @@ class Creature():
 
     def calc_ac(self):
         # AC = 8 + Combat Proficiency + Dexterity + Armor + Shield + Misc
-        temp_ac = 8 + self.combat_prof + self.dex
+        temp_ac = 8 + self.prof + self.dex
         temp_pp = 0 # also get the pp from armor and shields, pp from abilities will be calculated separately
         
-        calc_string = f"8 + prof({self.combat_prof}) + dex({self.dex})"
+        calc_string = f"8 + prof({self.prof}) + dex({self.dex})"
 
         if self.armor != None:
             temp_ac += self.armor.ac
