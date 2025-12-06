@@ -1,2 +1,5 @@
 id	name	description	level	pp
-1	
+4	Martial	Your start with 1 Focus Point and your FP increases as shown in the Barbarian Class Table. You also known Manuevers as shown in the table.	0	0.1667
+1	Melee Weapon Proficiency	You are Proficient with all Melee Weapons.	0	0
+2	Simple Ranged Proficiency	You are Proficient with Simple Ranged Weapons.	0	0
+3	Light Armor Proficiency	You are Proficient with Light Armor and Light Shields.	0	0
