@@ -2,8 +2,15 @@ id	name	description	level	pp
 4	Martial	Your start with 1 Focus Point and your FP increases as shown in the Barbarian Class Table. You also known Manuevers as shown in the table.	0	0.1667
 1	Melee Weapon Proficiency	You are Proficient with all Melee Weapons.	0	0
 2	Simple Ranged Proficiency	You are Proficient with Simple Ranged Weapons.	0	0
-3	Light Armor Proficiency	You are Proficient with Light Armor and Light Shields.	0	0
+3	Light Armor and Shield Proficiency	You are Proficient with Light Armor and Light Shields.	0	0
 5	Barbaric Focus	If you did not use FP on an Attack, you regain half of your FP when you score a Heavy or Critical Hit against a creatures. Additionally, if a Heavy or Critical Hit is scored against you, you also regain half of your FP.	1	0
 6	Rage	You can spend 1 AP and 1 FP to enter Rage for 1 minute. For the duration, you have the following effects: \\n- You deal +1 damage on Melee Attacks.\\n- You have ADV on Might Checks and Saves.\\n- Your AC decreases by 2.\\n- You gain Resistance (x0.5) to Physical Damage.\\nYour Rage ends early if you fall Unconscious, die, or choose to end it.	1	0.63
 7	Unarmored Warrior	- While not wearing Armor, your AC is: 8 + Proficiency + (Dexterity or Might) + 2\\n- While not wearing Armor, you have +1 Speed.	1	0
 8	Mighty Leap	You can use your Might instead of Dexterity to determine your Jump Distance and the damage you take from Falling.	1	0
+9	Forward Charge	When you make a Melee Attack on your turn, you can move up to 2 Spaces immediately before making the Attack.	2	0.33
+10	Danger Sense	You have ADV on Initiative Checks and when you are Surprised you are not Exposed.	2	0.31
+11	Reckless Attack	When you make an Melee Attack, you can choose to roll at ADV, but you are Exposed against the next attack against you.	2	0.71
+12	Primal Path	At level three you choose youre subclass, known as Primal Path.	3	0
+13	Additional Feat	You gain access to 1 Feat of your choice.	4	0
+14	Second Attack	When you make Attacks in combat, you do not gain a level of DIS until after your second Attack action on your turn.	5	 0.25
+15	Savage Surge	While Raging, your Speed is increased by 2 Spaces.	5	0.33
