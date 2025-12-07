@@ -1,3 +1,8 @@
+
+using `\\n` to indicate a new line in tsv
+
+need to find a way to calculate resistances and vulnerabilities Power Power contributions
+
 So adding **ADV** is effectively adding +5 to a roll
 
 Max Skill bonus is +11 (5 in skill, +6 from skill bonus if has expertise in the skill)
