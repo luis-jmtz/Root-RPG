@@ -1,5 +1,4 @@
-# Maplewood: an Maplewood TTRPG spin-off
-
+# Core Rules
 ## Dice: 
 Maplewood primarily uses a d20 for gameplay, but players should also have at least one of each of the following: d4, d8, d10, and d12.
 
