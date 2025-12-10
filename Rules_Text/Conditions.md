@@ -57,3 +57,22 @@ When you are *Frightened*, you suffer from the following effects:
 
 ### Grappled
 FIXME later
+
+
+### Hindered
+When you are *Hindered*, you have DIS on Attacks.
+
+
+### Impaired
+When you are *Impaired*, you have DIS on Physical Saves and Checks.
+
+### Incapacitated
+When you are *Incapacitated*, you cannot Speak, Concentrate, or spend Action Points.
+
+
+### Paralyzed
+When you are *Paralyzed*, you suffer from the following effects:
+- Attacks made within 1 Space of you that hit are considered Critical Hits.
+- You are Stunned 4 (you automatically fail Physical Checks and Saves).
+- You are Exposed.
+- You are Incapacitated (you can’t Speak, Concentrate, or spend Action Points).
