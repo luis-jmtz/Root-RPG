@@ -43,6 +43,7 @@ When you gain a level of *Exhaustion* you suffer from the following effects:
 - You subtract X from all Checks and Saves you make.
 - Your Speed and Save DC is reduced by X.
 If you gain 6 + levels of *Exhaustion*, you immediately die.
+You lose one level of *Exhaustion* per short rest.
 
 
 ### Exposed
@@ -76,3 +77,9 @@ When you are *Paralyzed*, you suffer from the following effects:
 - You are Stunned 4 (you automatically fail Physical Checks and Saves).
 - You are Exposed.
 - You are Incapacitated (you can’t Speak, Concentrate, or spend Action Points).
+
+
+### Petrified
+When you are *Petrified*, you and your non-magical belongings turn to stone. You suffer fro the the following effects:
+- Your weight increases by 10 times.
+- You have Resistance(x0.5) to all damage
