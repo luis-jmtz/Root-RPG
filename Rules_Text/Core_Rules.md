@@ -1,11 +1,11 @@
 # Core Rules
-## Dice: 
+### Dice: 
 Maplewood primarily uses a d20 for gameplay, but players should also have at least one of each of the following: d4, d8, d10, and d12.
 
-## Advantage/Disadvantage (ADV/DIS): 
+### Advantage/Disadvantage (ADV/DIS): 
 Certain abilities or situations may grant you a level of Advantage (ADV) or Disadvantage (DIS). You can have up to 3 stacks of ADV or DIS at a time. Each ADV cancels out one DIS and vice versa. For every stack of ADV you have, roll one additional die and use the highest result. For every stack of DIS you have, roll one additional die and use the lowest result.
 
-## Attributes:
+### Attributes:
 Maplewood features 4 attributes that define your character:
 - Might (Mgt): Represents physical strength and fortitude.
 - Dexterity (Dex): Reflects agility, flexibility, and balance.
@@ -14,20 +14,20 @@ Maplewood features 4 attributes that define your character:
 
 The value of an attribute is added to relevant skills and defenses.
 
-### Prime Attribute:
+#### Prime Attribute:
 Your Prime Attribute is your highest Attribute value.
 
-## Proficiency:
+### Proficiency:
 Proficiency represents your skill with a variety of Skill and Equipment. Your Proficiency Bonus is equal to **1 + ½ your character's level (rounded down)**. If you are Proficient with a weapon, you add your Proficiency Bonus to the Attack Roll. You also add your Proficiency Bonus to Spell Attacks. When using Armor or a Shield without Proficeincy, you have DIS on any Attribute Check, Saving Throw, or Attack Check.
 
 
-## Rounding Rules:
+### Rounding Rules:
 Always round down when calculating values, with a minimum result of 1. 
 
-## Action Points (AP):
+### Action Points (AP):
 Each player has 4 Action Points (AP) by default. This number can be temporarily increased or decreased based on circumstances. Action Points are used in combat or other time-sensitive situations. You regain Action Points at the **end of your turn**. In combat, you can spend additional AP to give yourself ADV on an Attack check. 
 
-## Degrees of Success:
+### Degrees of Success:
 When your d20 roll’s total meets or exceeds the target number (DC or AC), you succeed. For every 5 points your total exceeds the target, you gain one Degree of Success. Conversely, for every 5 points your total falls short of the target, you gain one Degree of Failure. 
 The specific effects of these Degrees are determined by the context of the roll. Most commonly, on a Weapon Attack, each Degree of Success deals +1 additional damage to the target. On a Saving Throw against a damaging effect, each Degree of Failure causes +1 additional damage.
 
@@ -46,10 +46,20 @@ When outside of combat you can choose to help a creature succeed on a check if i
 #### Help Action in Combat
 Hit Points measure your character’s stamina, luck, and resolve in combat. While you have HP remaining, you have avoided any serious physical wounds. Losing HP represents near misses, glancing blows, and mounting fatigue.
 
-## Hit Points and Vitality
-### Hit Points (HP)
+### Hit Points and Vitality
+#### Hit Points (HP)
 Hit Points represent your character's ability to get hit and keep going. It is effectively a combination of your character's stamina and willingness to continue to fight. While you have Hit Points remaining, it is assumed your character has not taken any lethal or debilitating wounds. 
-### Vitality
+#### Vitality
 When your Hit Points are reduced to zero, any further damage targets your Vitality instead. Your Vitality score is equal to your Proficiency Bonus.   
 
 Losing Vitality represents receiving serious harm. The first time you take Vitality damage per a Long Rest, you immediately gain one level of Exhaustion. You naturally regain 1 point of Vitality at the end of a Long Rest. If your Vitality is ever reduced to zero, your character dies.`
+
+
+### Resting
+#### Quick Rest
+A Quick Rest requires at least 30 minutes of light activity, such as eating, reading, or resting. During this time, you cannot engage in strenuous tasks. Upon finishing a Quick Rest, you regain up to half your maximum Hit Points and all of your Focus Points. You may benefit from a Quick Rest no more than twice before completing a Long Rest.
+
+#### Long Rest
+A Long Rest lasts at least 8 hours, during which you must spend at least 6 hours sleeping. When you complete a Long Rest, you regain all your Hit Points and Focus Points, and you also receive the benefits of any abilities that would normally apply after a Quick Rest. You can gain the benefits of a Long Rest only once every 24 hours.
+
+If you go without a Long Rest for a full 24-hour period, you must succeed on a Might saving throw (DC 13 + number of days since your last Long Rest) or gain one level of Exhaustion.
