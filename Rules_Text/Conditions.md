@@ -83,3 +83,48 @@ When you are *Paralyzed*, you suffer from the following effects:
 When you are *Petrified*, you and your non-magical belongings turn to stone. You suffer fro the the following effects:
 - Your weight increases by 10 times.
 - You have Resistance(x0.5) to all damage
+- Any Poisons or Diseases affecting you are suspended, and you are immune to additional Poisons or Diseases while Petrified.
+- You are also considered to have the follow conditions:
+  - Paralyzed
+  - Stunned
+  - Exposed
+  - Incapacitated
+
+### Poisoned
+While you are *Poisoned*, you have DIS on Attack Checks and Skill Checks.
+
+
+### Prone
+When you are *Prone*, your only option to move is to crawl unless you choose to stand up. Standing up requires that you use a Move action. Standing up triggers and Attack of Opportunity. You are also subjected to the following effects: 
+- You have DIS on Attack Checks.
+- If a creature within 5 ft of you attacks you, they do so with ADV. If an attacker is more than 5ft away from you the Attack Check is at DIS.
+While Crawiling you have Slow 1. 
+
+### Restrained 
+While *Restrained*, you are considered to have the following conditions:
+- Hindered (DIS on Attacks)
+- Exposed (Attacks against you have ADV)
+- Grappled ()
+
+
+### Slowed X
+For each level of *Slow*, each Space of movement costs and additional X of movement to move through it.
+- Ex: If you have Slowed 2 and your normal Speed is 6, you can only move 2 Spaces.
+
+### Stunned X
+For each level of *Stun* you have, your AP is reduced by X. If this would reduce you to 0 AP or less, you are considered to have the following conditions:
+- Exposed (Attacks against you have ADV)
+- Incapacitated
+Furthermore, you automatically fail Physical Saves.
+
+
+### Surprised
+When you are *Surprised*, you cannot spend Action Points and are Exposed (attacks against you have ADV).
+
+### Unconscious
+When you are *Unconscious*, you are no longer aware of your surroundings and you drop whatever you are holding. You also are considered to have the following effects:
+- Paralyzed
+- Stunned 4
+- Exposed
+- Incapacitated
+If you are willingly sleeping such as through a Long Rest, you can choose to end the *Unconscious* condition after a set amount of time. You can also choose to prematurely wake up in response to hearing or sensing something by rolling a Perception check at DIS with a DC set by the DM.
