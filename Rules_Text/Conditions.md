@@ -121,10 +121,31 @@ Furthermore, you automatically fail Physical Saves.
 ### Surprised
 When you are *Surprised*, you cannot spend Action Points and are Exposed (attacks against you have ADV).
 
+
+### Taunted
+While *Taunted*, you have DIS on Attacks against creatures other than the that *Taunted* you.
+
+
 ### Unconscious
 When you are *Unconscious*, you are no longer aware of your surroundings and you drop whatever you are holding. You also are considered to have the following effects:
 - Paralyzed
 - Stunned 4
 - Exposed
 - Incapacitated
+
 If you are willingly sleeping such as through a Long Rest, you can choose to end the *Unconscious* condition after a set amount of time. You can also choose to prematurely wake up in response to hearing or sensing something by rolling a Perception check at DIS with a DC set by the DM.
+
+## Non-Stacking Conditions
+Most conditions can be applied multiple times or from multiple sources, but the following Conditions are exceptions:
+- Burning
+- Bleeding
+- Defened
+- Blinded
+- Prone
+- Incapacitated
+- Paralyzed
+- Unconscious
+- Petrified
+- Surprised
+
+If a creature is already affected by one of these Conditions and is subjected to it again, the new effect replaces the old one if its duration is longer.
