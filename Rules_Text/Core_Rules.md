@@ -1,11 +1,11 @@
 # Core Rules
-### Dice: 
+### Dice
 Maplewood primarily uses a d20 for gameplay, but players should also have at least one of each of the following: d4, d8, d10, and d12.
 
-### Advantage/Disadvantage (ADV/DIS): 
+### Advantage/Disadvantage (ADV/DIS)
 Certain abilities or situations may grant you a level of Advantage (ADV) or Disadvantage (DIS). You can have up to 3 stacks of ADV or DIS at a time. Each ADV cancels out one DIS and vice versa. For every stack of ADV you have, roll one additional die and use the highest result. For every stack of DIS you have, roll one additional die and use the lowest result.
 
-### Attributes:
+### Attributes
 Maplewood features 4 attributes that define your character:
 - Might (Mgt): Represents physical strength and fortitude.
 - Dexterity (Dex): Reflects agility, flexibility, and balance.
