@@ -33,6 +33,8 @@ The specific effects of these Degrees are determined by the context of the roll.
 
 ### Difficulty Challenge (DC): 
 The Difficulty Challenge (DC) represents how hard it is to succeed at a particular task. When attempting to overcome a challenge, your total roll (including all modifiers) must be equal to or greater than the DC to succeed.
+#### Failing Skill Checks
+Skill checks represent your character's best attempt under pressure. Failure does not mean your character is incompetent. Instead, it reflects the unpredictable nature of action. A failed check often means the task was more complex than it appeared—perhaps the lock is rusted shut, the merchant is in a foul mood and unreceptive to charm, or the ancient text is deliberately encoded. It can also mean you succeeded but at a significant cost, took too long, attracted unwanted attention, or only partially completed your goal, leaving you exposed or requiring a new approach. In this way, failure drives the story forward by introducing new complications and challenges, rather than simply halting progress.
 
 ### Multiple Check Penalty: 
 During Combat, each time a creature makes the same Check before the end of its turn, they suffer stacking DIS on that type of Check. This penalty only applies to Checks made during the creature’s turn, and doesn’t apply to Reactions taken on another creature’s turn (unless otherwise stated).
