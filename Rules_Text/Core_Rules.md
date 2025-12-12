@@ -65,3 +65,14 @@ A Quick Rest requires at least 30 minutes of light activity, such as eating, rea
 A Long Rest lasts at least 8 hours, during which you must spend at least 6 hours sleeping. When you complete a Long Rest, you regain all your Hit Points and Focus Points, and you also receive the benefits of any abilities that would normally apply after a Quick Rest. You can gain the benefits of a Long Rest only once every 24 hours.
 
 If you go without a Long Rest for a full 24-hour period, you must succeed on a Might saving throw (DC 13 + number of days since your last Long Rest) or gain one level of Exhaustion.
+
+
+### Critical Success and Failures
+#### Critical Success (Natural 20)
+A Natural 20 on the d20 represents a moment of exceptional skill, surprising luck, or dramatic flair. On a Skill or Ability Check, you automatically succeed and achieve the best plausible outcome for your effort. This success respects the internal logic and boundaries of the world. For example, you could not convince a king to surrender his throne on a single roll, but with a Natural 20, you might make him roar with laughter, earning his favor and a significant bonus to your reward.
+
+#### Natural 20 on Attack Checks
+When you roll a Natural 20 on an Attack Check, you automatically hit your target and deal an additional +2 damage. You must still calculate your total Attack roll to determine if you qualify for additional damage from Degrees of Success.
+
+#### Critical Failure (Natural 1)
+A Natural 1 on the d20 signifies a moment of profound misfortune, a sudden complication, or a crucial error under pressure. On a Skill or Ability Check, it results in an automatic failure. In combat, a Natural 1 on an Attack Check means you automatically miss, regardless of your modifiers. As with a critical success, the result should be a logical and dramatic consequence of the action. You must still calculate your total modified roll to determine if you incur additional negative effects from the Degrees of Failure.
