@@ -91,11 +91,13 @@ with p2:
 
         st.markdown("### Shields")
 
-        shields = shields.drop("pp", axis=1)
+        shields = shields.drop(weapon_drops, axis=1)
         shields['type'] = shields['type'].replace({0: 'light', 1: 'heavy'})
 
         with st.expander("Shield List"):
                st.markdown(shields.to_markdown(index=False))
+
+        st.markdown("**Hit Points**: When you would take damage from an Attack, you can choose for your shield to take the damage instead. If your shield would be reduced to 0 hit points, it is destroyed.")
 
 
 
