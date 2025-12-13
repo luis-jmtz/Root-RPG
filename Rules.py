@@ -15,13 +15,26 @@ with open(condition_path, 'r', encoding='utf-8') as f:
         # Read the entire contents into a single string variable
         conditions = f.read()
 
+
+
+
+
+
 # dataframe loading
 
 if 'armor_df' not in st.session_state:
     st.session_state.armor_df = pd.read_csv(r"Data\armor.tsv", sep="\t")
 armors = st.session_state.armor_df
 
-# st.markdown(core_rules)
+if 'weapons_df' not in st.session_state:
+    st.session_state.weapons_df = pd.read_csv(r"Data\weapons.tsv", sep="\t")
+weapons = st.session_state.weapons_df
+
+
+
+
+
+
 
 st.title("Maplewood: an Oakhearth Spinoff")
 
@@ -50,6 +63,17 @@ with p2:
         st.markdown(armors.to_markdown(index=False))
 
         st.write("Damage Reduction (dmg_reduction) reduces the amount of damage you take from Physical Damgage Sources (Bludgeoning, Piercing, Slashing) by the amount shown in the column")
+        
+
+        # weapons
+        st.markdown("### Weapons")
+        weapon_drops = ["id", 'pp']
+        weapons = weapons.drop(weapon_drops, axis=1)
+        weapons['weapon_type'] = weapons['weapon_type'].replace({0: 'Melee', 1: 'Ranged'})
+        weapons['ammo_type'] = weapons['ammo_type'].replace({0: 'None', 1: 'Arrow', 2:"Bolt", 3:"Bullet", 4:"Any Rock"})
+
+        # st.dataframe(weapons)
+        st.markdown(weapons.to_markdown(index=False))
 
 
 with p3:
