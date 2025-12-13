@@ -32,7 +32,9 @@ if 'weapons_df' not in st.session_state:
     st.session_state.weapons_df = pd.read_csv(r"Data\weapons.tsv", sep="\t")
 weapons = st.session_state.weapons_df
 
-
+if 'properties_df' not in st.session_state:
+    st.session_state.properties_df = pd.read_csv(r"Data\weapon_properties.tsv", sep="\t")
+properties = st.session_state.properties_df
 
 
 
@@ -79,6 +81,13 @@ with p2:
         with st.expander("Weapon List"):
                 # st.dataframe(weapons)
                 st.markdown(weapons.to_markdown(index=False))
+
+        st.markdown("#### Weapon Properties")
+        properties = properties.drop("pp", axis=1)
+
+        with st.expander("Weapon Properties List"):
+               st.markdown(properties.to_markdown(index=False))
+
 
 
 with p3:
