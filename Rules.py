@@ -4,6 +4,7 @@ import pandas as pd
 # rules text files
 core_path = r"Rules_Text\Core_Rules.md"
 condition_path = r"Rules_Text\Conditions.md"
+equip_path = r"Rules_Text\Equipment_Rules.md"
 
 
 # opens rules text
@@ -12,9 +13,10 @@ with open(core_path, 'r', encoding='utf-8') as f:
         core_rules = f.read()
 
 with open(condition_path, 'r', encoding='utf-8') as f:
-        # Read the entire contents into a single string variable
         conditions = f.read()
 
+with open(equip_path, 'r', encoding='utf-8') as f:
+        equip_rules = f.read()
 
 
 
@@ -38,9 +40,13 @@ if 'shield_df' not in st.session_state:
     st.session_state.shield_df = pd.read_csv(r"Data\shields.tsv", sep="\t")
 shields = st.session_state.shield_df
 
+if 'basic_df' not in st.session_state:
+    st.session_state.basic_df = pd.read_csv(r"Data\basic_equipment.tsv", sep="\t")
+basic = st.session_state.basic_df
 
 
 st.title("Maplewood: an Oakhearth Spinoff")
+
 
 tabs = ["Core Rules", "Equipment", "Conditions"]
 
@@ -51,6 +57,8 @@ with p1:
 
 with p2:
         st.title("Equipment")
+
+        st.markdown(equip_rules)
 
         # armors
         st.markdown("### Armor")
@@ -98,6 +106,15 @@ with p2:
                st.markdown(shields.to_markdown(index=False))
 
         st.markdown("**Hit Points**: When you would take damage from an Attack, you can choose for your shield to take the damage instead. If your shield would be reduced to 0 hit points, it is destroyed.")
+
+        st.markdown("### General Equipment")
+        
+        basic = basic.drop(weapon_drops, axis=1)
+
+        with st.expander("List of General Equipment"):
+              st.markdown(basic.to_markdown(index=False))
+
+        
 
 
 

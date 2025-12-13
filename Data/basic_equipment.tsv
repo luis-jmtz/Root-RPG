@@ -1,5 +1,4 @@
 id	name	description	value	pp
-0	0	0	0	0
 1	Quiver	Holds Arrows or Bolts	2	0
 2	Bundle of Arrows	5x Arrows	1	0
 3	Bundle of Bolts	5x Bolts	2	0
@@ -8,3 +7,4 @@ id	name	description	value	pp
 6	Matchbox	A box of matches. 5 charges, expend a charge and 1 AP to light a match.	1	0
 7	Bomb	A cannonball-sized metal ball filled with gunpowder and metal shards. When lit spend 1 AP to throw/roll this bomb. The distance it can be rolled/thrown is equal to your Might + 3. This bomb explodes at the end of the thrower's next turn. Any creature within 5 spaces of the explosion must make a DC 15 Physical save or take 5 points of Piercing/Sonic damage, plus an additional point of damage for each degree of failure. Half damage on a successful save.	25	10
 8	Ammo Bag	Holds Bullets	1	0
+9	Day's Rations	A day's worth of Rations	1	0
