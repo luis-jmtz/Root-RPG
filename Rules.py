@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
-
 # rules text files
 core_path = r"Rules_Text\Core_Rules.md"
 condition_path = r"Rules_Text\Conditions.md"
@@ -36,7 +34,9 @@ if 'properties_df' not in st.session_state:
     st.session_state.properties_df = pd.read_csv(r"Data\weapon_properties.tsv", sep="\t")
 properties = st.session_state.properties_df
 
-
+if 'shield_df' not in st.session_state:
+    st.session_state.shield_df = pd.read_csv(r"Data\shields.tsv", sep="\t")
+shields = st.session_state.shield_df
 
 
 
@@ -87,6 +87,15 @@ with p2:
 
         with st.expander("Weapon Properties List"):
                st.markdown(properties.to_markdown(index=False))
+
+
+        st.markdown("### Shields")
+
+        shields = shields.drop("pp", axis=1)
+        shields['type'] = shields['type'].replace({0: 'light', 1: 'heavy'})
+
+        with st.expander("Shield List"):
+               st.markdown(shields.to_markdown(index=False))
 
 
 
