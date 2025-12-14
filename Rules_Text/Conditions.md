@@ -57,7 +57,7 @@ When you are *Frightened*, you suffer from the following effects:
 - You have DIS on all Checks while you can see the source of your fear.
 
 ### Grappled
-FIXME later
+While you are *Grappled*, your Speed is 0 and you have DIS on Dexterity Checks and Saves.
 
 
 ### Hindered

@@ -10,14 +10,14 @@ equip_path = r"Rules_Text\Equipment_Rules.md"
 
 # --------------------------- opens rules text --------------- #
 with open(core_path, 'r', encoding='utf-8') as f:
-        # Read the entire contents into a single string variable
-        core_rules = f.read()
+    # Read the entire contents into a single string variable
+    core_rules = f.read()
 
 with open(condition_path, 'r', encoding='utf-8') as f:
-        conditions = f.read()
+    conditions = f.read()
 
 with open(equip_path, 'r', encoding='utf-8') as f:
-        equip_rules = f.read()
+    equip_rules = f.read()
 
 
 # ------------------ Combat Rules -------------------------- #
@@ -51,7 +51,7 @@ combat_folder = r"Rules_Text\Combat_Rules"
 
 
 if 'combat' not in st.session_state:
-      st.session_state.combat = load_markdown_files(combat_folder)
+    st.session_state.combat = load_markdown_files(combat_folder)
 
 combat_rules = st.session_state.combat
 
@@ -91,81 +91,85 @@ st.title("Maplewood: an Oakhearth Spinoff")
 
 tabs = ["Core Rules", "Equipment", "Conditions", "Combat"]
 
-p1, p2,p3,p4 = st.tabs(tabs)
+p1, p2, p3, p4 = st.tabs(tabs)
 
 with p1:
-        st.markdown(core_rules)
+    st.markdown(core_rules)
 
 with p2:
-        st.title("Equipment")
+    st.title("Equipment")
 
-        st.markdown(equip_rules)
+    st.markdown(equip_rules)
 
-        # armors
-        st.markdown("### Armor")
-        armor_drops = ['id', 'pp']
-        armors = armors.drop(armor_drops, axis=1)
+    # armors
+    st.markdown("### Armor")
+    armor_drops = ['id', 'pp']
+    armors = armors.drop(armor_drops, axis=1)
 
-        armors['type'] = armors['type'].replace({0: 'light', 1: 'heavy'})
-        armors['stealth_dis'] = armors['stealth_dis'].replace({0: 'No', 1: 'Yes'})
+    armors['type'] = armors['type'].replace({0: 'light', 1: 'heavy'})
+    armors['stealth_dis'] = armors['stealth_dis'].replace({0: 'No', 1: 'Yes'})
 
-        armors = armors.drop(index=0)
+    armors = armors.drop(index=0)
 
-        # armors = armors.to_markdown(index=False)
-        
-        with st.expander("Armor List"):
-                st.markdown(armors.to_markdown(index=False))
+    # armors = armors.to_markdown(index=False)
+    
+    with st.expander("Armor List"):
+        st.markdown(armors.to_markdown(index=False))
 
-        st.write("Damage Reduction (dmg_reduction) reduces the amount of damage you take from Physical Damgage Sources (Bludgeoning, Piercing, Slashing) by the amount shown in the column")
-        
+    st.write("Damage Reduction (dmg_reduction) reduces the amount of damage you take from Physical Damgage Sources (Bludgeoning, Piercing, Slashing) by the amount shown in the column")
+    
 
-        # weapons
-        st.markdown("### Weapons")
-        
-        weapon_drops = ["id", 'pp']
-        weapons = weapons.drop(weapon_drops, axis=1)
-        weapons['weapon_type'] = weapons['weapon_type'].replace({0: 'Melee', 1: 'Ranged'})
-        weapons['ammo_type'] = weapons['ammo_type'].replace({0: 'None', 1: 'Arrow', 2:"Bolt", 3:"Bullet", 4:"Any Rock"})
+    # weapons
+    st.markdown("### Weapons")
+    
+    weapon_drops = ["id", 'pp']
+    weapons = weapons.drop(weapon_drops, axis=1)
+    weapons['weapon_type'] = weapons['weapon_type'].replace({0: 'Melee', 1: 'Ranged'})
+    weapons['ammo_type'] = weapons['ammo_type'].replace({0: 'None', 1: 'Arrow', 2: "Bolt", 3: "Bullet", 4: "Any Rock"})
 
-        with st.expander("Weapon List"):
-                # st.dataframe(weapons)
-                st.markdown(weapons.to_markdown(index=False))
+    with st.expander("Weapon List"):
+        # st.dataframe(weapons)
+        st.markdown(weapons.to_markdown(index=False))
 
-        st.markdown("#### Weapon Properties")
-        properties = properties.drop("pp", axis=1)
+    st.markdown("#### Weapon Properties")
+    properties = properties.drop("pp", axis=1)
 
-        with st.expander("Weapon Properties List"):
-               st.markdown(properties.to_markdown(index=False))
+    with st.expander("Weapon Properties List"):
+        st.markdown(properties.to_markdown(index=False))
 
 
-        st.markdown("### Shields")
+    st.markdown("### Shields")
 
-        shields = shields.drop(weapon_drops, axis=1)
-        shields['type'] = shields['type'].replace({0: 'light', 1: 'heavy'})
+    shields = shields.drop(weapon_drops, axis=1)
+    shields['type'] = shields['type'].replace({0: 'light', 1: 'heavy'})
 
-        with st.expander("Shield List"):
-               st.markdown(shields.to_markdown(index=False))
+    with st.expander("Shield List"):
+        st.markdown(shields.to_markdown(index=False))
 
-        st.markdown("**Hit Points**: When you would take damage from an Attack, you can choose for your shield to take the damage instead. If your shield would be reduced to 0 hit points, it is destroyed.")
+    st.markdown("**Hit Points**: When you would take damage from an Attack, you can choose for your shield to take the damage instead. If your shield would be reduced to 0 hit points, it is destroyed.")
 
-        st.markdown("### General Equipment")
-        
-        basic = basic.drop(weapon_drops, axis=1)
+    st.markdown("### General Equipment")
+    
+    basic = basic.drop(weapon_drops, axis=1)
 
-        with st.expander("List of General Equipment"):
-              st.markdown(basic.to_markdown(index=False))
+    with st.expander("List of General Equipment"):
+        st.markdown(basic.to_markdown(index=False))
 
-        
 
 
 
 with p3:
-        st.markdown(conditions)
+    st.markdown(conditions)
 
 
 with p4:
-       st.title("Combat Rules")
+    st.title("Combat Rules")
 
-       with st.expander("Core Combat Rules"):
-             st.markdown(combat_rules[0])
-             st.markdown(combat_rules[1])
+    with st.expander("Core Combat Rules"):
+        st.markdown(combat_rules[0])
+        st.markdown(combat_rules[1])
+
+    st.markdown("### Offensive Actions")
+
+    with st.expander("List of Offensive Actions"):
+        st.markdown(combat_rules[2])
