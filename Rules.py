@@ -183,3 +183,8 @@ with p4:
 
     with st.expander("Help, Held, and Move Actions"):
         st.markdown(combat_rules[4])
+
+    st.markdown("Reaction Rules")
+
+    with st.expander("Reactions and Attacks of Opportunity"):
+        st.markdown(combat_rules[5])
