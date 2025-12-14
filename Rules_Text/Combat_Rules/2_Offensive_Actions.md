@@ -1,4 +1,7 @@
 ### Offensive Actions
+
+---
+
 **Attack (1 AP)**   
 You make 1 Attack Check. For each additional AP you use, you gain a level of ADV.
 

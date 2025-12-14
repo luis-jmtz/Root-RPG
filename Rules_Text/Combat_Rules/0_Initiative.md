@@ -9,3 +9,5 @@ Each player has an Initiative Bonus, calculated as follows:
 
 #### Uneven number of Creatures
 When one group of combatants outnumbers the other, the larger group activates in smaller sub-groups to maintain balance. This ensures that each side alternates turns evenly, with the larger group dividing its activations across the round as needed.
+
+---
