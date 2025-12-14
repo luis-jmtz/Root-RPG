@@ -48,9 +48,9 @@ basic = st.session_state.basic_df
 st.title("Maplewood: an Oakhearth Spinoff")
 
 
-tabs = ["Core Rules", "Equipment", "Conditions"]
+tabs = ["Core Rules", "Equipment", "Conditions", "Combat"]
 
-p1, p2,p3 = st.tabs(tabs)
+p1, p2,p3,p4 = st.tabs(tabs)
 
 with p1:
         st.markdown(core_rules)
@@ -120,3 +120,7 @@ with p2:
 
 with p3:
         st.markdown(conditions)
+
+
+with p4:
+       st.title("Combat Rules")
