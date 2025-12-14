@@ -8,7 +8,7 @@ condition_path = r"Rules_Text\Conditions.md"
 equip_path = r"Rules_Text\Equipment_Rules.md"
 
 
-# --------------------------- opens rules text ---------------
+# --------------------------- opens rules text --------------- #
 with open(core_path, 'r', encoding='utf-8') as f:
         # Read the entire contents into a single string variable
         core_rules = f.read()
@@ -20,7 +20,7 @@ with open(equip_path, 'r', encoding='utf-8') as f:
         equip_rules = f.read()
 
 
-# ------------------ Combat Rules --------------------------
+# ------------------ Combat Rules -------------------------- #
 
 
 def load_markdown_files(folder_path):
@@ -49,7 +49,11 @@ def load_markdown_files(folder_path):
 
 combat_folder = r"Rules_Text\Combat_Rules"
 
-combat_rules = load_markdown_files(combat_folder)
+
+if 'combat' not in st.session_state:
+      st.session_state.combat = load_markdown_files(combat_folder)
+
+combat_rules = st.session_state.combat
 
 
 
@@ -76,6 +80,11 @@ if 'basic_df' not in st.session_state:
     st.session_state.basic_df = pd.read_csv(r"Data\basic_equipment.tsv", sep="\t")
 basic = st.session_state.basic_df
 
+
+
+
+
+# ---------------- Actual UI Code ---------------------- #
 
 st.title("Maplewood: an Oakhearth Spinoff")
 
