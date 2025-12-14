@@ -46,7 +46,7 @@ During Combat, each time a creature makes the same Check before the end of its t
 When outside of combat you can choose to help a creature succeed on a check if it makes sense. When you do so, the target of the Help Action adds a d8 to that check. Multiple creatures may attempt to Help a creature if it makes since in the situation. If multiple creatures Help with the check the dice size gets smaller after each creature, starting at a d8 then d6 then d4. The GM may rule that a creature must succeed on a check before they are able to help another. For example, if a Wizard is making an Arcane Check with a DC 15, the GM may rule that any creature that wishes to help must succeed on a DC 10 Arcane roll to Help.
 
 #### Help Action in Combat
-Hit Points measure your character’s stamina, luck, and resolve in combat. While you have HP remaining, you have avoided any serious physical wounds. Losing HP represents near misses, glancing blows, and mounting fatigue.
+Unless otherwise stated, you must be adjacent to a creature to give them the Help Action in combat. You can spend 1 AP to grant an ally a d8 Help Die until the start of your next turn. You must declare the target creature and the type of Check you're aiding.
 
 ### Hit Points and Vitality
 #### Hit Points (HP)
