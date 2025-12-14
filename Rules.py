@@ -188,3 +188,8 @@ with p4:
 
     with st.expander("Reactions and Attacks of Opportunity"):
         st.markdown(combat_rules[5])
+
+    st.markdown('### Misc Combat Rules')
+
+    with st.expander("List of Miscellaneous Combat Rules"):
+        st.markdown(combat_rules[6])
