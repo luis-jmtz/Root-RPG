@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os
 
 # rules text files
 core_path = r"Rules_Text\Core_Rules.md"
@@ -7,7 +8,7 @@ condition_path = r"Rules_Text\Conditions.md"
 equip_path = r"Rules_Text\Equipment_Rules.md"
 
 
-# opens rules text
+# --------------------------- opens rules text ---------------
 with open(core_path, 'r', encoding='utf-8') as f:
         # Read the entire contents into a single string variable
         core_rules = f.read()
@@ -19,10 +20,41 @@ with open(equip_path, 'r', encoding='utf-8') as f:
         equip_rules = f.read()
 
 
+# ------------------ Combat Rules --------------------------
+
+
+def load_markdown_files(folder_path):
+    """Load all markdown files from a folder and return list of strings"""
+    markdown_texts = []
+    
+    # Check if folder exists
+    if not os.path.exists(folder_path):
+        return markdown_texts
+    
+    # Get all .md files
+    md_files = [f for f in os.listdir(folder_path) if f.endswith('.md')]
+    # add a file for every file in the folder directory if ti ends with .md
+    
+    # Read each file
+    for filename in md_files:
+        file_path = os.path.join(folder_path, filename)
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+                markdown_texts.append(content)
+        except Exception as e:
+            st.error(f"Error reading {filename}: {e}")
+    
+    return markdown_texts
+
+combat_folder = r"Rules_Text\Combat_Rules"
+
+combat_rules = load_markdown_files(combat_folder)
 
 
 
-# dataframe loading
+
+# -------------------- dataframe loading -------------------
 
 if 'armor_df' not in st.session_state:
     st.session_state.armor_df = pd.read_csv(r"Data\armor.tsv", sep="\t")
@@ -124,3 +156,7 @@ with p3:
 
 with p4:
        st.title("Combat Rules")
+
+       with st.expander("Core Combat Rules"):
+             st.markdown(combat_rules[0])
+             st.markdown(combat_rules[1])

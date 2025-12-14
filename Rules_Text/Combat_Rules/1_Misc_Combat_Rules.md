@@ -1,7 +1,7 @@
 ### Time in Combat
 Time in combat is measured in Rounds. Each Round is 6 seconds.
 
-## Surprise
+### Surprise
 Combat begins only when the GM instructs the players to roll for initiative. However, players and NPCs may use stealth or other tactics to gain an advantage before combat starts. If one group is caught off guard, they gain the Surprised condition and automatically fail their initiative checks.
 
 Surprised Condition: When you have the Surprised condition you can't spend Action Points and are Exposed (Attack checks against them have ADV)
