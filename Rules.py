@@ -173,3 +173,13 @@ with p4:
 
     with st.expander("List of Offensive Actions"):
         st.markdown(combat_rules[2])
+
+    st.markdown("### Defensive Actions")
+
+    with st.expander("List of Defensive Actions"):
+        st.markdown(combat_rules[3])
+    
+    st.markdown("### Help, Held, and Move Actions")
+
+    with st.expander("Help, Held, and Move Actions"):
+        st.markdown(combat_rules[4])
