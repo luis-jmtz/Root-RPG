@@ -64,8 +64,15 @@ with t2:
             class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
             class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
 
+            
             subclass_ids_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_id.tsv"
             subclass_names = pd.read_csv(subclass_ids_path, sep="\t")["subclass"].to_list()
+
+            subclass_data_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_abilities.tsv"
+            subclass_abilities = pd.read_csv(subclass_data_path, sep="\t").drop(["id","pp"], axis=1)
+
+            # st.table(subclass_abilities)
+
 
             # data from the core class abilities
             base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
