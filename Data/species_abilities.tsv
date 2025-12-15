@@ -6,7 +6,7 @@ id	species_id	name	description	pp
 5	2	Prowler	You have ADV on Stealth Checks.	0.3125
 6	2	Land on Your Feet	You take 1 less damage from Falling and have ADV on against effects and Saves that would make you fall Prone.	0.64
 7	3	Flexible Skeleton	You suffer no Speed penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.	0
-8	3	Prey Instinct	You have ADV on checks and saves against being Grappled and on Saves to avoid traps.	0.3125
+8	3	Prey Instinct	You have ADV on checks and saves against being Grappled and on Saves and Checks to avoid traps.	0.3125
 9	3	Keen Nose	You have ADV on Checks to that rely on use your sense of smell.	0.3125
 10	4	Hollow Bones	You take 1 less damage from Falling, but you have DIS on saves or checks to avoid being forcibly moved.	0.02
 11	4	Flight	If your arms/wings are not constrained or holding an object and you are not wearing Heavy Armor you have a Flight speed equal to half of your normal Speed. While flying you can hold objects in your talons.	0.5
