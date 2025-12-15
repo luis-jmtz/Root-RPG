@@ -60,5 +60,13 @@ with t2:
 
         base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
 
+        proficiencies = base_features_df[base_features_df["level"] == 0]
+
         with st.expander(f"{pc_class} Class Abilities"):
-            st.table(base_features_df)
+
+            st.markdown("##### Proficiencies")
+            # loops to load the Proficiencies, separate from other abilities because it should go before the class table
+            for row in proficiencies.itertuples():
+                st.markdown(f"**{row.name}**: {row.description}")
+
+            # st.table(base_features_df)
