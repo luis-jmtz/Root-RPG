@@ -20,6 +20,15 @@ species_abilities = st.session_state.species_abilities
 
 
 
+if 'class_ids' not in st.session_state:
+    st.session_state.class_ids =  pd.read_csv(r"Data\PC_Class_Data\class_id.tsv", sep="\t")
+    st.session_state.class_list = st.session_state.class_ids['name'].to_list()
+
+class_ids = st.session_state.class_ids
+class_list = st.session_state.class_list
+
+
+
 
 # initialize tabs
 tab_names = ["Species", "Player Classes"]
@@ -27,6 +36,7 @@ t1,t2 = st.tabs(tab_names)
 
 with t1:
 
+    # loops through the species list and generates the display for each species
     for species in species_list:
         st.markdown(f"### {species}")
         temp_species_id = species_ids[species_ids["name"] == species].iloc[0,0]
@@ -39,3 +49,13 @@ with t1:
             for row in temp_df.itertuples():
                 st.markdown(f"**{row.name}**: {row.description}")
                 # st.markdown(f"{row.description}")
+
+with t2:
+
+    for pc_class in class_list:
+        st.markdown(f"### {pc_class}")
+
+        base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
+
+        with st.expander(f"{pc_class} Class Abilities"):
+            st.markdown("")
