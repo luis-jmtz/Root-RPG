@@ -91,5 +91,8 @@ with t2:
 
                         st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
 
+            with st.expander(f"{pc_class} Subclasses"):
+                st.markdown()
+
     st.session_state.loaded_classes = True
 
