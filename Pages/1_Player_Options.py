@@ -52,42 +52,44 @@ with t1:
 
 with t2:
 
-    for pc_class in class_list:
-        st.markdown(f"### {pc_class}")
+    if "loaded_classes" not in st.session_state:
 
-        base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
-        base_features_df = pd.read_csv(base_features_path, sep="\t")
+        for pc_class in class_list:
+            st.markdown(f"### {pc_class}")
 
-        class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
-        class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
+            base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
+            base_features_df = pd.read_csv(base_features_path, sep="\t")
 
-        base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
+            class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
+            class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
 
-        proficiencies = base_features_df[base_features_df["level"] == 0]
+            base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
 
-        levels = range(1,6) # player levels go from 1 to 5
+            proficiencies = base_features_df[base_features_df["level"] == 0]
 
-        with st.expander(f"{pc_class} Class Abilities"):
+            levels = range(1,6) # player levels go from 1 to 5
 
-            st.markdown("##### Proficiencies")
-            # loops to load the Proficiencies, separate from other abilities because it should go before the class table
-            for row in proficiencies.itertuples():
-                st.markdown(f"**{row.name}**: {row.description}")
+            with st.expander(f"{pc_class} Class Abilities"):
 
-            st.markdown(f"##### {pc_class} Class Table")
-            st.markdown(class_table)
+                st.markdown("##### Proficiencies")
+                # loops to load the Proficiencies, separate from other abilities because it should go before the class table
+                for row in proficiencies.itertuples():
+                    st.markdown(f"**{row.name}**: {row.description}")
 
-            st.markdown("##### Class Abilities")
-            for n in levels:
-                st.markdown(f"**Level {n}**")
-                temp_df = base_features_df[base_features_df["level"] == n]
-                # st.write(n)
-                # str.replace(r'\\n', r'\n', regex=True)
+                st.markdown(f"##### {pc_class} Class Table")
+                st.markdown(class_table)
 
-                for row in temp_df.itertuples():
-                    description = str(row.description).replace(r'\\n', '\n')
+                st.markdown("##### Class Abilities")
+                for n in levels:
+                    st.markdown(f"**Level {n}**")
+                    temp_df = base_features_df[base_features_df["level"] == n]
+                    # st.write(n)
+                    # str.replace(r'\\n', r'\n', regex=True)
 
-                    st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
+                    for row in temp_df.itertuples():
+                        description = str(row.description).replace(r'\\n', '\n')
 
+                        st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
 
-            # st.table(base_features_df)
+    st.session_state.loaded_classes = True
+
