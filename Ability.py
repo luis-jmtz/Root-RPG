@@ -3,6 +3,7 @@ import pandas as pd
 class Ability():
     def __init__(self):
         self.id = 0 
+        self.name = ""
         self.description = ""
         self.pp = 0 # how much the ability contributes to the creauture's difficulty
 
