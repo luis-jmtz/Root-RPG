@@ -56,6 +56,9 @@ with t2:
         st.markdown(f"### {pc_class}")
 
         base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
+        base_features_df = pd.read_csv(base_features_path, sep="\t")
+
+        base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
 
         with st.expander(f"{pc_class} Class Abilities"):
-            st.markdown("")
+            st.table(base_features_df)
