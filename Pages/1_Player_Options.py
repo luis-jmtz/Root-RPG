@@ -62,11 +62,17 @@ with t2:
 
         proficiencies = base_features_df[base_features_df["level"] == 0]
 
+        # contains abilities that are not proficiencies
+        abilities = base_features_df[~base_features_df['level'].isin(proficiencies['level'])]
+
         with st.expander(f"{pc_class} Class Abilities"):
 
             st.markdown("##### Proficiencies")
             # loops to load the Proficiencies, separate from other abilities because it should go before the class table
             for row in proficiencies.itertuples():
                 st.markdown(f"**{row.name}**: {row.description}")
+
+            
+
 
             # st.table(base_features_df)
