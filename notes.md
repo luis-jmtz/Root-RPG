@@ -1,5 +1,13 @@
 
 using `\\n` to indicate a new line in tsv
+- to read `\\n` use
+```python
+x  = string.replace(r'\\n', '\n')
+
+# example in itertuples loop
+for row in temp_df.itertuples():
+    description = str(row.description).replace(r'\\n', '\n')
+```
 
 need to find a way to calculate resistances and vulnerabilities Power Power contributions
 

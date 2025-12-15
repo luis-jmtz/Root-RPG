@@ -58,12 +58,14 @@ with t2:
         base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
         base_features_df = pd.read_csv(base_features_path, sep="\t")
 
+        class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
+        class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
+
         base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
 
         proficiencies = base_features_df[base_features_df["level"] == 0]
 
-        # contains abilities that are not proficiencies
-        abilities = base_features_df[~base_features_df['level'].isin(proficiencies['level'])]
+        levels = range(1,6) # player levels go from 1 to 5
 
         with st.expander(f"{pc_class} Class Abilities"):
 
@@ -72,7 +74,20 @@ with t2:
             for row in proficiencies.itertuples():
                 st.markdown(f"**{row.name}**: {row.description}")
 
-            
+            st.markdown(f"##### {pc_class} Class Table")
+            st.markdown(class_table)
+
+            st.markdown("##### Class Abilities")
+            for n in levels:
+                st.markdown(f"**Level {n}**")
+                temp_df = base_features_df[base_features_df["level"] == n]
+                # st.write(n)
+                # str.replace(r'\\n', r'\n', regex=True)
+
+                for row in temp_df.itertuples():
+                    description = str(row.description).replace(r'\\n', '\n')
+
+                    st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
 
 
             # st.table(base_features_df)
