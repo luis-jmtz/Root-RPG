@@ -57,12 +57,17 @@ with t2:
         for pc_class in class_list:
             st.markdown(f"### {pc_class}")
 
+            # paths to files and creates relevant dataframes
             base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
             base_features_df = pd.read_csv(base_features_path, sep="\t")
 
             class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
             class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
 
+            subclass_ids_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_id.tsv"
+            subclass_names = pd.read_csv(subclass_ids_path, sep="\t")["subclass"].to_list()
+
+            # data from the core class abilities
             base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
 
             proficiencies = base_features_df[base_features_df["level"] == 0]
@@ -83,8 +88,7 @@ with t2:
                 for n in levels:
                     st.markdown(f"**Level {n}**")
                     temp_df = base_features_df[base_features_df["level"] == n]
-                    # st.write(n)
-                    # str.replace(r'\\n', r'\n', regex=True)
+
 
                     for row in temp_df.itertuples():
                         description = str(row.description).replace(r'\\n', '\n')
@@ -92,7 +96,9 @@ with t2:
                         st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
 
             with st.expander(f"{pc_class} Subclasses"):
-                st.markdown()
+                # st.markdown(subclass_names)
+                for name in subclass_names:
+                    st.markdown(f"##### {name}")
 
     st.session_state.loaded_classes = True
 
