@@ -3,7 +3,11 @@
 ---
 
 **Attack (1 AP)**   
-You make 1 Attack Check. For each additional AP you use, you gain a level of ADV.
+You make 1 Attack Check. For each additional AP you use, you gain a level of ADV.   
+
+On an Attack Check, there are additional terms and effects when your total Attack Check (d20 + Attack Bonus + any applicable abilities) has a Degree of Success:
+- Heavy Hit: 5 or more above the target AC.
+- Brutal Hit: 10 or more above the target AC. You ignore any Resistences from the target's armor. 
 
 ---
 
@@ -39,3 +43,21 @@ There are multiple ways for a Grapple to end:
 	- Success: Neither are moved.
 	- Failure: The Grapple ends, and the effect moves both creatures as intended.
 - Falling: If the grappled creature begins Falling while Grappled, and the Grappler is not falling with it, the Grappler hold the grappled creature in place if they can carry its weight.
+
+---
+
+**Coup de Grace (3 AP)**
+A Coup de Grace (also known as a Killing Blow), is a particularly lethal strike against a creature. You can perform a Coup de Grace if all of the following conditions are met.
+- The target creature is under the effects of at least one of the following conditions:
+  - Incapacitated
+  - Paralyzed
+  - Stun 4 (or Stunned to the point of having no AP)
+  - Unconscious
+- You are not within the Melee range of a creature currently aggressive to you.
+- You do not have DIS on Attack Checks against the target creature.
+- The target creature is not Immune to Critical Hits.
+- The target is not more than 1 Size category larger than you.   
+ 
+When you take a Coup de Grace, you automatically land a Critical Hit against the target. You also calculate 20 + your Attack Bonus, to determine additional damage from Degrees of Success. Your Attack automatically counts as Heavy or Brutal hit for the purpose of any of your abilities.   
+
+The target must make a Might Save whose DC is equal to *10 + the total damage you did against the target*. If the target fails the Save, it immediately gains a level of *Exhaustion*. It gains 1 additional level of *Exhaustion* for every Degree of failure.

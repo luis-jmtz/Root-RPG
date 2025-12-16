@@ -104,7 +104,7 @@ While Crawiling you have Slow 1.
 While *Restrained*, you are considered to have the following conditions:
 - Hindered (DIS on Attacks)
 - Exposed (Attacks against you have ADV)
-- Grappled ()
+- Grappled (Speed is 0 and you have DIS on Dexterity Checks and Saves)
 
 
 ### Slowed X
