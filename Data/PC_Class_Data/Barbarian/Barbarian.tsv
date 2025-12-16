@@ -3,7 +3,7 @@ id	name	description	level	pp
 1	Melee Weapon Proficiency	You are Proficient with all Melee Weapons.	0	0
 2	Crossbow Proficiency	You are Proficient with the Crossbow weapon	0	0
 3	Light Armor and Shield Proficiency	You are Proficient with Light Armor and Light Shields.	0	0
-5	Barbaric Focus	If you did not use FP on an Attack, you regain half of your FP when you score a Heavy or Critical Hit against a creatures. Additionally, if a Heavy or Critical Hit is scored against you, you also regain half of your FP.	1	0
+5	Barbaric Focus	If you did not use FP on the Attack, you regain half of your FP when you score a Heavy or Critical Hit against a creatures. Additionally, if a Heavy or Critical Hit is scored against you, you also regain half of your FP.	1	0
 6	Rage	You can spend 1 AP and 1 FP to enter Rage for 1 minute. For the duration, you have the following effects: \\n- You deal +1 damage on Melee Attacks.\\n- You have ADV on Might Checks and Saves.\\n- Your AC decreases by 2.\\n- You gain Resistance (x0.5) to Physical Damage.\\nYour Rage ends early if you fall Unconscious, die, or choose to end it.	1	0.63
 7	Unarmored Warrior	 While not wearing Armor, your AC is: 8 + Proficiency + (Dexterity or Might) + 2. Furthermore, while not wearing Armor, you have +1 Speed.	1	0
 8	Mighty Leap	You can use your Might instead of Dexterity to determine your Jump Distance and the damage you take from Falling.	1	0

@@ -1,3 +1,7 @@
 id	name	description	level	pp
 1	Martial	You start with 1 Focus Point and your FP increases as shown in the Bastard Class Table. You also known Manuevers as shown in the table.	0	0.1667
-2	Weapon Proficiencies	
+2	Weapon Proficiencies	You are Proficient with the following weapons: Sword, Dagger, Club, Mace, Bow, Hand Crossbow, and Crossbow.	0	0
+3	Lightly Armored	You are Proficient with Light Armor.	0	0
+4	Bastard's Focus	If you did not use FP on the Attack, you regain half of your FP when you:\\n- Hit a Flanked target.\\n- Hit a target affected by a Condition.	1	0
+5	Debiltating Strike	When you have ADV on an Attack, if you hit the target creature, you can spend 1 SP to force the target to make a Might Save against your Save DC. On a failed Save, the target gains 1 level of *Stun* until the end of your next turn.	1	0.16
+6	Roguish Finesse	You less-than-honest living has provided you with the following abilities:\\n- When you take the Disengage or Hide Action, you can move up to half your Speed.\\n- You gain Expertise in one Skill of your choice.\\n- You gain 1 Skill Point.	1	0.5
