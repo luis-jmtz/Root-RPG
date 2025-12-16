@@ -116,7 +116,7 @@ with p2:
     with st.expander("Armor List"):
         st.markdown(armors.to_markdown(index=False))
 
-    st.write("Damage Reduction (dmg_reduction) reduces the amount of damage you take from Physical Damgage Sources (Bludgeoning, Piercing, Slashing) by the amount shown in the column")
+    st.write("Damage Resistance (dmg_resistance) reduces the amount of damage you take from Physical Damgage Sources (Bludgeoning, Piercing, Slashing) by the amount shown in the column.")
     
 
     # weapons
