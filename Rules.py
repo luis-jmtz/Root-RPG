@@ -148,6 +148,8 @@ with p2:
 
     st.markdown("**Hit Points**: When you would take damage from an Attack, you can choose for your shield to take the damage instead. If your shield would be reduced to 0 hit points, it is destroyed.")
 
+    st.markdown("While wielding a Shield, you can make an Unarmed Attack using the Shield.")
+
     st.markdown("### General Equipment")
     
     basic = basic.drop(weapon_drops, axis=1)
