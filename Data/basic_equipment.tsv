@@ -9,3 +9,4 @@ id	name	description	value	pp
 8	Ammo Bag	Holds Bullets	1	0
 9	Day's Rations	A day's worth of Rations	1	0
 10	Bitter Drink	A small vial of liquid that contains a bitter liquid distilled from a variety of medicinal herbs. Restores d4 Hit Points. It takes 1 AP to drink yourself and 2 AP to feed to another creature.	2	0.1316
+11	Vial Bandolier	A belt that with loops or pockets that can hold up to 6 small vials or similar sized objects.	1	0
