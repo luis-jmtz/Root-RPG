@@ -17,6 +17,15 @@ The value of an attribute is added to relevant skills and defenses.
 #### Prime Attribute:
 Your Prime Attribute is your highest Attribute value.
 
+#### Attribute Limits   
+The highest value an Attribute can be is limited by your Character's Level as shown below:
+
+| PC Level | Attribute Limit |
+| -------- | --------------- |
+| 1        | 3               |
+| 5        | 4               |
+
+
 ### Proficiency:
 Proficiency represents your skill with a variety of Skill and Equipment. Your Proficiency Bonus is equal to **1 + ½ your character's level (rounded down)**. If you are Proficient with a weapon, you add your Proficiency Bonus to the Attack Roll. You also add your Proficiency Bonus to Spell Attacks. When using Armor or a Shield without Proficeincy, you have DIS on any Attribute Check, Saving Throw, or Attack Check.
 
@@ -52,7 +61,7 @@ Unless otherwise stated, you must be adjacent to a creature to give them the Hel
 #### Hit Points (HP)
 Hit Points represent your character's ability to get hit and keep going. It is effectively a combination of your character's stamina and willingness to continue to fight. While you have Hit Points remaining, it is assumed your character has not taken any lethal or debilitating wounds. 
 #### Vitality
-When your Hit Points are reduced to zero, any further damage targets your Vitality instead. Your Vitality score is equal to your Proficiency Bonus.   
+When your Hit Points are reduced to zero, any further damage targets your Vitality instead. Your Vitality score is equal to your Prime Attribute.   
 
 Losing Vitality represents receiving serious harm. The first time you take Vitality damage per a Long Rest, you immediately gain one level of Exhaustion. You naturally regain 1 point of Vitality at the end of a Long Rest. If your Vitality is ever reduced to zero, your character dies.`
 
