@@ -66,7 +66,8 @@ with t2:
 
             
             subclass_ids_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_id.tsv"
-            subclass_names = pd.read_csv(subclass_ids_path, sep="\t")["subclass"].to_list()
+            subclass_id_df = pd.read_csv(subclass_ids_path, sep="\t")
+            subclass_names = subclass_id_df["subclass"].to_list()
 
             subclass_data_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_abilities.tsv"
             subclass_abilities = pd.read_csv(subclass_data_path, sep="\t").drop(["id","pp"], axis=1)
@@ -106,6 +107,22 @@ with t2:
                 # st.markdown(subclass_names)
                 for name in subclass_names:
                     st.markdown(f"##### {name}")
+
+                    # get relevant subclass ID
+                    subclass_id = subclass_id_df[subclass_id_df["subclass"] == name].iloc[0, 0]
+
+                    # Get the subclass's abilities
+                    current_abilities = subclass_abilities[subclass_abilities["subclass"] == subclass_id]
+
+                    # groups abilities by level
+                    for level in sorted(current_abilities["level"].unique()):
+                        level_abilities = current_abilities[current_abilities["level"] == level]
+
+                        st.markdown(f"**Level {level}**")
+
+                        for row in level_abilities.itertuples():
+                            description = str(row.description).replace(r'\\n', '\n')
+                            st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
 
     st.session_state.loaded_classes = True
 
