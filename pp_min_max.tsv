@@ -3,16 +3,13 @@ attributes	-5	5
 level	0	5
 size	-2	2
 speed	0	6
-fly_speed	0	6
-burrow_speed	0	6
-climb_speed	0	6
 ap	0	6
 num_attacks	0	4
 focus_points	0	6
 ac	8	25
 weapon_dmg	0	3
 attack_bonus	0	7
-hp	1	30
+hit points	1	20
 dmg_reduction	0	3
 weapon_range	1	10
 skill_range	-5	11
