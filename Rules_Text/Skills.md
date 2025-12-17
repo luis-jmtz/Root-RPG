@@ -28,7 +28,6 @@ When attempting an action with a chance of failure, roll the relevant Skill Chec
 - Knowledge: With your GM’s permission, you can create a custom knowledge skill to specialize in a topic not covered above.
 
 ##### Charisma
-- Animal Handling: Represents your ability to communicate with, influence, or control animals and animalistic beings.
 - Insight: Represents your ability to read people’s intentions and emotions.
 - Persuasion: Represents your ability to influence others through truthful or cleverly reasoned arguments.
 - Deception: Represents your ability to mislead others through lies or untruths.
