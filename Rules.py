@@ -6,6 +6,7 @@ import os
 core_path = r"Rules_Text\Core_Rules.md"
 condition_path = r"Rules_Text\Conditions.md"
 equip_path = r"Rules_Text\Equipment_Rules.md"
+skills_path = r"Rules_Text\Skills.md"
 
 
 # --------------------------- opens rules text --------------- #
@@ -18,6 +19,9 @@ with open(condition_path, 'r', encoding='utf-8') as f:
 
 with open(equip_path, 'r', encoding='utf-8') as f:
     equip_rules = f.read()
+
+with open(skills_path, 'r', encoding='utf-8') as f:
+    skill_rules = f.read()
 
 
 # ------------------ Combat Rules -------------------------- #
@@ -89,13 +93,15 @@ basic = st.session_state.basic_df
 st.title("Maplewood: an Oakhearth Spinoff")
 
 
-tabs = ["Core Rules", "Equipment", "Conditions", "Combat"]
+tabs = ["Core Rules", "Equipment", "Conditions", "Combat","Skills"]
 
-p1, p2, p3, p4 = st.tabs(tabs)
+p1, p2, p3, p4,p5 = st.tabs(tabs)
 
+# Core Rules
 with p1:
     st.markdown(core_rules)
 
+# Equipment
 with p2:
     st.title("Equipment")
 
@@ -159,11 +165,12 @@ with p2:
 
 
 
-
+# Conditions
 with p3:
     st.markdown(conditions)
 
 
+# Combat Rules
 with p4:
     st.title("Combat Rules")
 
@@ -195,3 +202,8 @@ with p4:
 
     with st.expander("List of Miscellaneous Combat Rules"):
         st.markdown(combat_rules[6])
+
+# Conditions
+with p5:
+    st.title("Skills")
+    st.markdown(skill_rules)
