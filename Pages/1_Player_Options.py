@@ -34,7 +34,10 @@ class_list = st.session_state.class_list
 tab_names = ["Species", "Player Classes"]
 t1,t2 = st.tabs(tab_names)
 
+# Species
 with t1:
+
+    st.markdown("The Species options are purposely left vague to allow you to choose which and flavor any animal of your choice (within reason). You cannot play an animal any bigger than a normal wolf.")
 
     # loops through the species list and generates the display for each species
     for species in species_list:
@@ -50,6 +53,8 @@ with t1:
                 st.markdown(f"**{row.name}**: {row.description}")
                 # st.markdown(f"{row.description}")
 
+
+# Player Classes
 with t2:
 
     if "loaded_classes" not in st.session_state:
