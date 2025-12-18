@@ -29,6 +29,15 @@ class_list = st.session_state.class_list
 
 
 
+quirks_path = r"Rules_Text\Quirks.md"
+
+if 'quirks_string' not in st.session_state:
+    with open(quirks_path, 'r', encoding='utf-8') as f:
+        st.session_state.quirks_string = f.read()
+
+quirks_string = st.session_state.quirks_string
+
+
 
 # initialize tabs
 tab_names = ["Species", "Player Classes", "Quirks"]
@@ -129,4 +138,4 @@ with t2:
 
 # Quirks
 with t3:
-    st.markdown("# Quirks")
+    st.markdown(quirks_string)
