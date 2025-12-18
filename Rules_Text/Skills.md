@@ -3,9 +3,15 @@ When you create a character, you start with *Intelligence + 2* Skill Points. Inc
 
 You spend Skill Points to gain Proficiency in a Skill. When you have Proficiency in a Skill, you add your Proficiency Bonus to the Skill Check.
 
+### Expertise
+
 ### Skill Checks
 When attempting an action with a chance of failure, roll the relevant Skill Check. Each skill is associated with an Attribute.   
 **Skill Check** = Attribute + Proficiency Bonus if applicable + any additional bonuses
+
+### Expertise
+To have Expertise in a Skill, you must first have Proficiency in that Skill. When you have Expertise in a Skill, you double your Proficiency Bonus for that Skill.
+
 
 ### Skill List
 ##### Might
