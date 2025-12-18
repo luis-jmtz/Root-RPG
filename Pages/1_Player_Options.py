@@ -31,8 +31,8 @@ class_list = st.session_state.class_list
 
 
 # initialize tabs
-tab_names = ["Species", "Player Classes"]
-t1,t2 = st.tabs(tab_names)
+tab_names = ["Species", "Player Classes", "Quirks"]
+t1,t2,t3 = st.tabs(tab_names)
 
 # Species
 with t1:
@@ -126,3 +126,7 @@ with t2:
                     for row in level_abilities.itertuples():
                         description = str(row.description).replace(r'\\n', '\n')
                         st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
+
+# Quirks
+with t3:
+    st.markdown("# Quirks")
