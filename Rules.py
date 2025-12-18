@@ -10,19 +10,28 @@ skills_path = r"Rules_Text\Skills.md"
 
 
 # --------------------------- opens rules text --------------- #
+# Load files into session state if not already loaded
+if 'core_rules' not in st.session_state:
+    with open(core_path, 'r', encoding='utf-8') as f:
+        st.session_state.core_rules = f.read()
 
-with open(core_path, 'r', encoding='utf-8') as f:
-    # Read the entire contents into a single string variable
-    core_rules = f.read()
+if 'conditions' not in st.session_state:
+    with open(condition_path, 'r', encoding='utf-8') as f:
+        st.session_state.conditions = f.read()
 
-with open(condition_path, 'r', encoding='utf-8') as f:
-    conditions = f.read()
+if 'equip_rules' not in st.session_state:
+    with open(equip_path, 'r', encoding='utf-8') as f:
+        st.session_state.equip_rules = f.read()
 
-with open(equip_path, 'r', encoding='utf-8') as f:
-    equip_rules = f.read()
+if 'skill_rules' not in st.session_state:
+    with open(skills_path, 'r', encoding='utf-8') as f:
+        st.session_state.skill_rules = f.read()
 
-with open(skills_path, 'r', encoding='utf-8') as f:
-    skill_rules = f.read()
+# Create local variable references for convenient access
+core_rules = st.session_state.core_rules
+conditions = st.session_state.conditions
+equip_rules = st.session_state.equip_rules
+skill_rules = st.session_state.skill_rules
 
 
 # ------------------ Combat Rules -------------------------- #
