@@ -10,6 +10,7 @@ skills_path = r"Rules_Text\Skills.md"
 
 
 # --------------------------- opens rules text --------------- #
+
 with open(core_path, 'r', encoding='utf-8') as f:
     # Read the entire contents into a single string variable
     core_rules = f.read()

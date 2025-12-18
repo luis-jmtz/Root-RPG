@@ -57,77 +57,142 @@ with t1:
 # Player Classes
 with t2:
 
-    if "loaded_classes" not in st.session_state:
+        # for pc_class in class_list:
+        #     st.markdown(f"### {pc_class}")
 
-        for pc_class in class_list:
-            st.markdown(f"### {pc_class}")
+        #     # paths to files and creates relevant dataframes
+        #     base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
+        #     base_features_df = pd.read_csv(base_features_path, sep="\t")
 
-            # paths to files and creates relevant dataframes
-            base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
-            base_features_df = pd.read_csv(base_features_path, sep="\t")
-
-            class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
-            class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
+        #     class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
+        #     class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
 
             
-            subclass_ids_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_id.tsv"
-            subclass_id_df = pd.read_csv(subclass_ids_path, sep="\t")
-            subclass_names = subclass_id_df["subclass"].to_list()
+        #     subclass_ids_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_id.tsv"
+        #     subclass_id_df = pd.read_csv(subclass_ids_path, sep="\t")
+        #     subclass_names = subclass_id_df["subclass"].to_list()
 
-            subclass_data_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_abilities.tsv"
-            subclass_abilities = pd.read_csv(subclass_data_path, sep="\t").drop(["id","pp"], axis=1)
+        #     subclass_data_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_abilities.tsv"
+        #     subclass_abilities = pd.read_csv(subclass_data_path, sep="\t").drop(["id","pp"], axis=1)
 
-            # st.table(subclass_abilities)
-
-
-            # data from the core class abilities
-            base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
-
-            proficiencies = base_features_df[base_features_df["level"] == 0]
-
-            levels = range(1,6) # player levels go from 1 to 5
-
-            with st.expander(f"{pc_class} Class Abilities"):
-
-                st.markdown("##### Proficiencies")
-                # loops to load the Proficiencies, separate from other abilities because it should go before the class table
-                for row in proficiencies.itertuples():
-                    st.markdown(f"**{row.name}**: {row.description}")
-
-                st.markdown(f"##### {pc_class} Class Table")
-                st.markdown(class_table)
-
-                st.markdown("##### Class Abilities")
-                for n in levels:
-                    st.markdown(f"**Level {n}**")
-                    temp_df = base_features_df[base_features_df["level"] == n]
+        #     # st.table(subclass_abilities)
 
 
-                    for row in temp_df.itertuples():
+        #     # data from the core class abilities
+        #     base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
+
+        #     proficiencies = base_features_df[base_features_df["level"] == 0]
+
+        #     levels = range(1,6) # player levels go from 1 to 5
+
+        #     with st.expander(f"{pc_class} Class Abilities"):
+
+        #         st.markdown("##### Proficiencies")
+        #         # loops to load the Proficiencies, separate from other abilities because it should go before the class table
+        #         for row in proficiencies.itertuples():
+        #             st.markdown(f"**{row.name}**: {row.description}")
+
+        #         st.markdown(f"##### {pc_class} Class Table")
+        #         st.markdown(class_table)
+
+        #         st.markdown("##### Class Abilities")
+        #         for n in levels:
+        #             st.markdown(f"**Level {n}**")
+        #             temp_df = base_features_df[base_features_df["level"] == n]
+
+
+        #             for row in temp_df.itertuples():
+        #                 description = str(row.description).replace(r'\\n', '\n')
+
+        #                 st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
+
+        #     with st.expander(f"{pc_class} Subclasses"):
+        #         # st.markdown(subclass_names)
+        #         for name in subclass_names:
+        #             st.markdown(f"##### {name}")
+
+        #             # get relevant subclass ID
+        #             subclass_id = subclass_id_df[subclass_id_df["subclass"] == name].iloc[0, 0]
+
+        #             # Get the subclass's abilities
+        #             current_abilities = subclass_abilities[subclass_abilities["subclass"] == subclass_id]
+
+        #             # groups abilities by level
+        #             for level in sorted(current_abilities["level"].unique()):
+        #                 level_abilities = current_abilities[current_abilities["level"] == level]
+
+        #                 st.markdown(f"**Level {level}**")
+
+        #                 for row in level_abilities.itertuples():
+        #                     description = str(row.description).replace(r'\\n', '\n')
+        #                     st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
+
+    for pc_class in class_list:
+        st.markdown(f"### {pc_class}")
+
+        # paths to files and creates relevant dataframes
+        base_features_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}.tsv"
+        base_features_df = pd.read_csv(base_features_path, sep="\t")
+
+        class_table_path = fr"Data\PC_Class_Data\{pc_class}\{pc_class}_table.tsv"
+        class_table = pd.read_csv(class_table_path, sep="\t").to_markdown(index=False)
+
+        
+        subclass_ids_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_id.tsv"
+        subclass_id_df = pd.read_csv(subclass_ids_path, sep="\t")
+        subclass_names = subclass_id_df["subclass"].to_list()
+
+        subclass_data_path = rf"Data\PC_Class_Data\{pc_class}\{pc_class}_subclass_abilities.tsv"
+        subclass_abilities = pd.read_csv(subclass_data_path, sep="\t").drop(["id","pp"], axis=1)
+
+        # st.table(subclass_abilities)
+
+
+        # data from the core class abilities
+        base_features_df =  base_features_df.drop(["pp", 'id'], axis=1)
+
+        proficiencies = base_features_df[base_features_df["level"] == 0]
+
+        levels = range(1,6) # player levels go from 1 to 5
+
+        with st.expander(f"{pc_class} Class Abilities"):
+
+            st.markdown("##### Proficiencies")
+            # loops to load the Proficiencies, separate from other abilities because it should go before the class table
+            for row in proficiencies.itertuples():
+                st.markdown(f"**{row.name}**: {row.description}")
+
+            st.markdown(f"##### {pc_class} Class Table")
+            st.markdown(class_table)
+
+            st.markdown("##### Class Abilities")
+            for n in levels:
+                st.markdown(f"**Level {n}**")
+                temp_df = base_features_df[base_features_df["level"] == n]
+
+
+                for row in temp_df.itertuples():
+                    description = str(row.description).replace(r'\\n', '\n')
+
+                    st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
+
+        with st.expander(f"{pc_class} Subclasses"):
+            # st.markdown(subclass_names)
+            for name in subclass_names:
+                st.markdown(f"##### {name}")
+
+                # get relevant subclass ID
+                subclass_id = subclass_id_df[subclass_id_df["subclass"] == name].iloc[0, 0]
+
+                # Get the subclass's abilities
+                current_abilities = subclass_abilities[subclass_abilities["subclass"] == subclass_id]
+
+                # groups abilities by level
+                for level in sorted(current_abilities["level"].unique()):
+                    level_abilities = current_abilities[current_abilities["level"] == level]
+
+                    st.markdown(f"**Level {level}**")
+
+                    for row in level_abilities.itertuples():
                         description = str(row.description).replace(r'\\n', '\n')
-
                         st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
-
-            with st.expander(f"{pc_class} Subclasses"):
-                # st.markdown(subclass_names)
-                for name in subclass_names:
-                    st.markdown(f"##### {name}")
-
-                    # get relevant subclass ID
-                    subclass_id = subclass_id_df[subclass_id_df["subclass"] == name].iloc[0, 0]
-
-                    # Get the subclass's abilities
-                    current_abilities = subclass_abilities[subclass_abilities["subclass"] == subclass_id]
-
-                    # groups abilities by level
-                    for level in sorted(current_abilities["level"].unique()):
-                        level_abilities = current_abilities[current_abilities["level"] == level]
-
-                        st.markdown(f"**Level {level}**")
-
-                        for row in level_abilities.itertuples():
-                            description = str(row.description).replace(r'\\n', '\n')
-                            st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
-
-    st.session_state.loaded_classes = True
-
