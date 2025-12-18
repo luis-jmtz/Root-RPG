@@ -1,7 +1,3 @@
 id	subclass	name	description	level	pp
-1	1	Titan's Grip	While Raging, you can wield Two-Handed weapons using only one hand.	3	0
-2	1	Jump Good	Your Jump Distance increases by 1.	3	0.17
-3	1	Quick to Anger	When you roll Initiative, you can spend 1 SP to immediately Rage.	3	0
-4	2	Not Down Yet	Once per Long Rest, the first time you are reduced to 0 or fewer Hit Points, you gain a a number of Temp HP equal to your Prime Attribute. These Temp HP are added before the any damage reaches your Vitality.	3	0.1
-5	2	Missed Me	Once per Long Rest, the first time your Vitality would be reduced by any source of damage, the damage is reduced by a number equal to your Prime Attribute.	3	0.1
-6	2	Mind your Business	You have ADV on Saves against the Charmed condition.	3	0.31
+1	1	Unseen Ambusher	While in Combat, you have ADV on Stealth checks. Furthermore, if you are hidden from a creature, that creature has DIS on its Save against your Debilitating Strike.	3	.31
+2	1	Sinister Shot	Your *Cheap Shot* deals +1 damage for each additional Condition on the target. If a Condition has levels (X), each level of the Condition counts as an additional Condition. \\nIf a Condition states thats that you are also considered to have other conditions (Ex: When *Restrained* you are also considered to be *Hindered*), you do not gain additional damage for the **considered to have** Condition it lists. 	3	0.33
