@@ -1,3 +1,6 @@
 id	subclass	name	description	level	pp
 1	1	Unseen Ambusher	While in Combat, you have ADV on Stealth checks. Furthermore, if you are hidden from a creature, that creature has DIS on its Save against your Debilitating Strike.	3	.31
 2	1	Sinister Shot	Your *Cheap Shot* deals +1 damage for each additional Condition on the target. If a Condition has levels (X), each level of the Condition counts as an additional Condition. \\nIf a Condition states thats that you are also considered to have other conditions (Ex: When *Restrained* you are also considered to be *Hindered*), you do not gain additional damage for the **considered to have** Condition it lists. 	3	0.33
+3	2	Dashing Dodge	When you take the Dodge action you can move up to half of your Speed.	3	.5
+4	2	Taunting Shot	When you have ADV on an Attack, if you hit the target creature, you can spend 1 SP to force the target to make a Charisma Save against your Save DC. On a failure, the target creature is *Taunted* by you until the end of your next turn.	3	0
+5	2	Tall Tales	You know how to play to a crowd. You can spend up to 5 minutes telling a story to a crowd of creatures (that are not immediately hostile to you) and keep their rapt attention the entire time. During this story, creatures within the crowd have DIS on Perception Checks.	3	0
