@@ -14,11 +14,9 @@ When you are *Bleeding*, you take 1 True Damage at the start of each of your tur
 
 
 ### Blinded
-When you are *Blinded*, you suffer the following effects unless you have an ability that allows you to perceive your surroundings outside of normal sight:
-- You automatically fails Check that require normal sight.
-- You are *Exposed* (Attacks against you have ADV).
-- You are *Hindered* (You have Dis on Attacks).
-- If you are not guided by another creature, all Terrain is considered Difficult Terrain.
+When you are *Blinded*, you automatically fails Check that require normal sight, and if you are not guided by another creature, all Terrain is considered Difficult Terrain. You are also considered to have the following conditions:
+- Exposed (Attacks against you have ADV).
+- Hindered (You have Dis on Attacks).
 
 ### Burning
 When you are *Burning*, you take 1 Fire damage at the start of each of you turns.
@@ -42,7 +40,7 @@ When you are *Deafened*, you cannot hear through normal means. As a result you s
 When you gain a level of *Exhaustion* you suffer from the following effects:
 - You subtract X from all Checks and Saves you make.
 - Your Speed and Save DC is reduced by X.
-If you gain 6 + levels of *Exhaustion*, you immediately die.
+If you gain 6 + levels of *Exhaustion*, you immediately die.  
 You lose one level of *Exhaustion* per short rest.
 
 
@@ -72,11 +70,10 @@ When you are *Incapacitated*, you cannot Speak, Concentrate, or spend Action Poi
 
 
 ### Paralyzed
-When you are *Paralyzed*, you suffer from the following effects:
-- Attacks made within 1 Space of you that hit are considered Critical Hits.
-- You are Stunned 4 (you automatically fail Physical Checks and Saves).
-- You are Exposed.
-- You are Incapacitated (you can’t Speak, Concentrate, or spend Action Points).
+When you are *Paralyzed*, attacks made within 1 Space of you that hit are considered Critical Hits. You are also considered to have the following Conditions:
+- Stunned 4 (you automatically fail Physical Checks and Saves).
+- Exposed.
+- Incapacitated (you can’t Speak, Concentrate, or spend Action Points).
 
 
 ### Petrified
@@ -114,7 +111,8 @@ For each level of *Slow*, each Space of movement costs and additional X of movem
 ### Stunned X
 For each level of *Stun* you have, your AP is reduced by X. If this would reduce you to 0 AP or less, you are considered to have the following conditions:
 - Exposed (Attacks against you have ADV)
-- Incapacitated
+- Incapacitated   
+
 Furthermore, you automatically fail Physical Saves.
 
 
@@ -127,7 +125,7 @@ While *Taunted*, you have DIS on Attacks against creatures other than the that *
 
 
 ### Unconscious
-When you are *Unconscious*, you are no longer aware of your surroundings and you drop whatever you are holding. You also are considered to have the following effects:
+When you are *Unconscious*, you are no longer aware of your surroundings and you drop whatever you are holding. You also are considered to have the following Conditions:
 - Paralyzed
 - Stunned 4
 - Exposed
