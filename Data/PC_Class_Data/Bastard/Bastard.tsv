@@ -5,3 +5,9 @@ id	name	description	level	pp
 4	Bastard's Focus	If you did not use FP on the Attack, you regain half of your FP when you:\\n- Hit a Flanked target.\\n- Hit a target affected by a Condition.	1	0
 5	Debiltating Strike	When you have ADV on an Attack, if you hit the target creature, you can spend 1 SP to force the target to make a Might Save against your Save DC. On a failed Save, the target gains 1 level of *Stun* until the end of your next turn.	1	0.16
 6	Roguish Finesse	You less-than-honest living has provided you with the following abilities:\\n- When you take the Disengage or Hide Action, you can move up to half your Speed.\\n- You gain Expertise in one Skill of your choice.\\n- You gain 1 Skill Point.	1	0.5
+7	Cheap Shot	You deal +1 damage on Attacks against creatures that are Flanked or subject to at least 1 Condition.	2	0.33
+8	Theives' Cant	You learn to speak, understand, and leave messages in Thieves' Cant, the secret jargon of the criminal underworld. You can use this secret code to hide messages in normal conversation or leave secret markings on objects.	2	0
+9	Roguish Archetype	At level three you choose your subclass, known as Roguish Archetype.	3	0
+10	Additional Feat	You gain access to 1 Feat of your choice.	4	0
+11	Uncanny Dodge	When you are forced to Make a Physical or Dexterity Save, you can move up to half your Speed without provoking an Attack of Opportunity.	5	.5
+12	Impoved Debilitating Strike	When you make an successfully land and Attack with your Debilitating Strike, you deal an additional point of damage.	5	0.33
