@@ -40,8 +40,8 @@ quirks_string = st.session_state.quirks_string
 
 
 # initialize tabs
-tab_names = ["Species", "Player Classes", "Quirks"]
-t1,t2,t3 = st.tabs(tab_names)
+tab_names = ["Species", "Player Classes", "Quirks","Feats"]
+t1,t2,t3,t4 = st.tabs(tab_names)
 
 # Species
 with t1:
@@ -139,3 +139,8 @@ with t2:
 # Quirks
 with t3:
     st.markdown(quirks_string)
+
+
+
+with t4:
+    st.title("Feats")
