@@ -41,4 +41,4 @@ To have Expertise in a Skill, you must first have Proficiency in that Skill. Whe
 - Performance: Represents your ability to captivate an audience through entertainment, such as music, storytelling, or other artistic displays.
 
 ##### Prime
-- Perception: Represents your awareness and ability to sense the world around you. For Perception checks, use your Combat Proficiency in the place of an Attribute.
+- Perception: Represents your awareness and ability to sense the world around you.

@@ -1,0 +1,20 @@
+id	attribute	name	description
+1	1	Athletics	Represents your ability to apply physical strength effectively.
+2	1	Intimidation	Represents your ability to manipulate others using your physique or physical presence.
+3	2	Acrobatics	Your ability to maintain balance and agility in tricky situations, such as running across ice or balancing on a tightrope.
+4	2	Sleight-of-Hand	Covers manual dexterity for tasks like pickpocketing or performing subtle tricks.
+5	2	Stealth	Represents your ability to remain undetected by others.
+6	3	Investigation	Represents your ability to deduce information based on clues and evidence.
+7	3	Medicine	Represents your knowledge of medicinal techniques, tools, and treatments.
+8	3	Survival	Represents your understanding of nature and your ability to hunt, track, or navigate the wilderness.
+9	3	History	Represents your knowledge of historical events, items, places, or people.
+10	3	Arcane	Represents your knowledge of magic, its uses, and techniques.
+11	3	Religion	Represents your understanding of religious beliefs, customs, and traditions.
+12	3	Occultism	Represents your knowledge of otherworldly creatures, dimensions, and phenomena.
+13	3	Knowledge	With your GM’s permission, you can create a custom knowledge skill to specialize in a topic not covered above.
+14	4	Insight	Represents your ability to read people’s intentions and emotions.
+15	4	Persuasion	Represents your ability to influence others through truthful or cleverly reasoned arguments.
+16	4	Deception	Represents your ability to mislead others through lies or untruths.
+17	4	Threaten	Represents your ability to coerce others through intimidating or threatening language.
+18	4	Performance	Represents your ability to captivate an audience through entertainment, such as music, storytelling, or other artistic displays.
+19	5	Perception	Represents your awareness and ability to sense the world around you.
