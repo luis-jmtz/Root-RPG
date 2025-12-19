@@ -27,6 +27,10 @@ if 'class_ids' not in st.session_state:
 class_ids = st.session_state.class_ids
 class_list = st.session_state.class_list
 
+if 'quirks_list' not in st.session_state:
+    st.session_state.quirks_list = pd.read_csv(r"Data\quirks.tsv", sep="\t")
+quirks_list = st.session_state.quirks_list
+
 
 
 quirks_path = r"Rules_Text\Quirks.md"
@@ -139,6 +143,31 @@ with t2:
 # Quirks
 with t3:
     st.markdown(quirks_string)
+    max_species_id_value = max(species_ids["id"].to_list())
+
+    quirks_species_range = range(0, max_species_id_value+1) # includes 0 for the quirks that are not species dependent
+
+    # st.write(quirks_species_range)
+
+    quirks_dfs = [] # list of dataframes. each dataframe will hold the quirks for a given species
+
+    # adds the empty dataframes
+    column_names = ['name', "requirements", "species_requirment", "description"]
+    for species in quirks_species_range:
+        quirks_dfs.append(pd.DataFrame(columns=column_names))
+
+    # adds the correct quirks to the given dataframe
+    for index, row in quirks_list.iterrows():
+        # st.write(row)
+
+        species_id = row['species_requirment']
+
+        # Convert the row to a DataFrame and append it to the appropriate species dataframe
+        row_df = pd.DataFrame([row])
+        quirks_dfs[species_id] = pd.concat([quirks_dfs[species_id], row_df], ignore_index=True)
+
+    st.write(quirks_dfs)
+    
 
 
 
