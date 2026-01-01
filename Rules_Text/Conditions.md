@@ -88,7 +88,8 @@ When you are *Petrified*, you and your non-magical belongings turn to stone. You
   - Incapacitated
 
 ### Poisoned
-While you are *Poisoned*, you have DIS on Attack Checks and Skill Checks.
+While you are *Poisoned*, you have DIS on Attack Checks and Skill Checks.   
+You can be Poisoned by multiple sources, however the effects of being *Poisoned* do not stack. You must be cleared of each individual instance of being *Poisoned* for the condition to end. Note that certain sources of Poison cause additional effects, so that instance of the *Poisoned* condition must be removed to lose those additional effects.
 
 
 ### Prone
