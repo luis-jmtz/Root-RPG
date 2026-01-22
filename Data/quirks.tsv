@@ -2,18 +2,18 @@ name	requirements	species_requirment	description
 Compulsive Liar	You cannot have the Scouts Honor Quirk	0	You add a d4 to all Deception Checks, but subtract d4 from all Persuasion Checks.
 Scout's Honor	You cannot have the Compulsive Liar Quirk	0	You add a d4 to all Persuasion Checks, but subtract a d4 from all Deception Checks.
 Pussy Cat	Species: Feline	2	You add d4 to Mental Saves and Checks against Rodents, but you subtract d4 from Mental Saves and Checks against Canines.
-Four Eyes	None	0	While wearing glasses, you add a d4 to checks tha require sight, but without glasses you instead subtract a d4.
+Four Eyes	0	0	While wearing glasses, you add a d4 to checks tha require sight, but without glasses you instead subtract a d4.
 Small Frame	Species: Rodent	3	You add a d4 to Acrobatics Checks, but subtract a d4 from Athletics Checks.
-Very Friendly	None	0	You add a d4 to all Charisma Checks, but subtract a d4 from all Attack Checks.
-Hoarder	None	0	You gain 3 more Inventory Slots, but when all of your Inventory Slots are not filled, you subtract a d4 to Mental Saves.
+Very Friendly	0	0	You add a d4 to all Charisma Checks, but subtract a d4 from all Attack Checks.
+Hoarder	0	0	You gain 3 more Inventory Slots, but when all of your Inventory Slots are not filled, you subtract a d4 to Mental Saves.
 Man's Man	Gender: Male	0	You add a d4 to Charisma Checks against men, but you subtract a d4 on Charisma Checks against women.
 Lady Lover	Gender: Female	0	You add a d4 to Charisma Checks against women, but you subtract a d4 on Charisma Checks against men.
-Militant Sympathizer	None	0	You are a known associate with the either the Marquise de Cat or Eyrie Dynasty Faction. You add a d4 to Persuasion Checks made against your members of your chosen, but subtract a d4 from Persusion Checks with those that oppose your chosen faction. The DM may roll the subtraction if the the players are unaware of an NPC's alligenace.
-Bottomless Stomach	None	0	You add a d4 to Saves against ingested poisons or spoiled food. You subtract a d4 from Social Checks when food is present, as you are easily distracted by it.
-Armchair General	None	0	You add a d4 to History Checks about combat or warfare, but you subtract d4 from Survival Checks to navigate terrain or forage, as your knowledge is purely theoretical.
-Bleeding Heart	None	0	You add a d4 to Insight checks to detect suffering, fear, or sadness in another creature. You subtract a d4 from Intimidation checks, as you struggle to convincingly project cruelty.
-People Watcher	None	0	You add a d4 to Insight checks made to understand strangers or crowds. You subtract a d4 from Perception checks to notice environmental details, as you are focused on the people.
-Gruff Exterior	None	0	You add a d4 to Intimidation checks. Your blunt manner subtracts a d4 from Persuasion checks when trying to be charming, diplomatic, or delicate.
+Militant Sympathizer	0	0	You are a known associate with the either the Marquise de Cat or Eyrie Dynasty Faction. You add a d4 to Persuasion Checks made against your members of your chosen, but subtract a d4 from Persusion Checks with those that oppose your chosen faction. The DM may roll the subtraction if the the players are unaware of an NPC's alligenace.
+Bottomless Stomach	0	0	You add a d4 to Saves against ingested poisons or spoiled food. You subtract a d4 from Social Checks when food is present, as you are easily distracted by it.
+Armchair General	0	0	You add a d4 to History Checks about combat or warfare, but you subtract d4 from Survival Checks to navigate terrain or forage, as your knowledge is purely theoretical.
+Bleeding Heart	0	0	You add a d4 to Insight checks to detect suffering, fear, or sadness in another creature. You subtract a d4 from Intimidation checks, as you struggle to convincingly project cruelty.
+People Watcher	0	0	You add a d4 to Insight checks made to understand strangers or crowds. You subtract a d4 from Perception checks to notice environmental details, as you are focused on the people.
+Gruff Exterior	0	0	You add a d4 to Intimidation checks. Your blunt manner subtracts a d4 from Persuasion checks when trying to be charming, diplomatic, or delicate.
 Bird's-Eye View	Species: Bird	4	You add a d4 to sight-based Checks made from an elevated perch or while flying, but you subtract a d4 from sight-based Checks made to notice details at ground level or underfoot.
 Terrier Tenacity	Species: Canine	1	You add a d4 to Athletics checks made to dig, burrow, or squeeze into tight spaces. Your short legs and low profile cause you to subtract a d4 from checks made to reach high objects or keep pace over long-distance travel.
 Alley Cat	Species: Feline	2	You add a d4 to Stealth checks made in urban environments, crowded markets, or at night. Your disdain for authority and messy situations causes you to subtract a d4 from group Performance or Persuasion checks where decorum is expected.

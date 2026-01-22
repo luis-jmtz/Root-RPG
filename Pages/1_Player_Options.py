@@ -168,19 +168,26 @@ with t3:
 
     # st.write(quirks_dfs)
 
-    for frame in quirks_dfs:
-        with st.expander("Temp"):
-            for row in frame.itertuples():
-                st.write(f"#### {row.name}")
+    species_quirks_list = ["Generic", "Canine", "Feline", "Rodent", "Bird"]
 
-                if row.requirements == "NaN":
+    quirk_counter = 0
+
+    for frame in quirks_dfs:
+
+        st.write(f"### {species_quirks_list[quirk_counter]} Quirks")
+        with st.expander(f"{species_quirks_list[quirk_counter]} Quirks"):
+            for row in frame.itertuples():
+                st.write(f"##### **{row.name}**")
+
+                if row.requirements == "0":
                     st.write(f"*Requirements* - None")
                 else:
                     st.write(f"*Requirements* - {row.requirements}")
 
 
                 st.write(f"{row.description}")
-                # st.write(row)
+                st.write("---")
+        quirk_counter +=1
     
 
 
