@@ -33,6 +33,12 @@ quirks_list = st.session_state.quirks_list
 
 
 
+if 'feats_list' not in st.session_state:
+    st.session_state.feats_list = pd.read_csv(r"Data\feats.tsv", sep="\t")
+feats_list = st.session_state.feats_list
+
+
+
 quirks_path = r"Rules_Text\Quirks.md"
 
 if 'quirks_string' not in st.session_state:
@@ -198,3 +204,17 @@ with t3:
 
 with t4:
     st.title("Feats")
+    st.write("---")
+
+    feats_list = feats_list.sort_values("name")
+
+    for row in feats_list.itertuples():
+        st.write(f"##### {row.name}")
+
+        if row.requirements == "0":
+            st.write(f"*Requirements* - None")
+        else:
+            st.write(f"*Requirements* - {row.requirements}")
+
+        st.write(f"{row.description}")
+        st.write("---")
