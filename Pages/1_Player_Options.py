@@ -119,6 +119,8 @@ with t2:
 
                     st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
 
+                st.write("---")
+
         with st.expander(f"{pc_class} Subclasses"):
             # st.markdown(subclass_names)
             for name in subclass_names:
@@ -139,6 +141,8 @@ with t2:
                     for row in level_abilities.itertuples():
                         description = str(row.description).replace(r'\\n', '\n')
                         st.markdown(f"*{row.name}*<br> {description}", unsafe_allow_html=True)
+                
+                st.write("---")
 
 # Quirks
 with t3:
