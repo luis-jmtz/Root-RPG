@@ -1,2 +1,10 @@
 id	name	description	level	pp
 1	Martial	Your start with 1 Focus Point and your FP increases as shown in the Commandant Class Table. You also known Manuevers as shown in the table.	0	0.1667
+2	Bladed Proficiency	You are Proficient with Spears, Daggers, and Swords.	0	0
+3	Pistoleer Proficiency	You are Proficienct with Flintlock Pistols.	0	0
+4	Armor Proficiency	You are Proficient with Light Armor.	0	0
+5	Commander's Focus	You regain half of your FP each time you grant a creature a Help Die.	1	0
+6	Inspiring Presence	Whenenever your spend FP while in Combat, you gain a pool of HP equal to the FP spent. Choose a number of creatures (up to your Profiency Bonus) within 5 Spaces of you that can see or hear you, and divide the HP among them.	1	.1
+7	Commander's Call	You can spend 1 AP and 1 FP to command a willing creature that you can see within 5 Spaces of you that can also see or hear you. The chosen creature can immediately take 1 of the following Actions of your choice as a Reaction for free. You can only use each of the following commands once on each of your turns: \\n- Attack: The creature makes and Attack with ADV. They cannot spend any resources on this Attack, such as additional AP or FP. \\n - Dodge: The creature takes the Dodge Action. If they've already take the Dodge Action, they instead take the Full Dodge Action.	1	0.17
+8	Natural Leader	You have ADV on Checks made to convince creatures that you are an authority figure. Additionally, you have ADV on the first Charisma Check made to interact with non-hostile members of military groups (such as soldiers, guards, etc.).	2	0
+9	Commanding Aura	You’re surrounded by a 5 Space Aura. You can target any creature within your Aura to grant one of the following effects below, provided the target can see or hear you. \\n- Bolster: (1 AP) You take the Help Action to aid the target with an Attack. You can also do so as a Reaction whenever a valid target makes an Attack. \\n- Rally: (1 AP) You grant  a creature  Temp HP equal to your Proficiency Bonus.	2	0.16
