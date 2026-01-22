@@ -166,7 +166,21 @@ with t3:
         row_df = pd.DataFrame([row])
         quirks_dfs[species_id] = pd.concat([quirks_dfs[species_id], row_df], ignore_index=True)
 
-    st.write(quirks_dfs)
+    # st.write(quirks_dfs)
+
+    for frame in quirks_dfs:
+        with st.expander("Temp"):
+            for row in frame.itertuples():
+                st.write(f"#### {row.name}")
+
+                if row.requirements == "NaN":
+                    st.write(f"*Requirements* - None")
+                else:
+                    st.write(f"*Requirements* - {row.requirements}")
+
+
+                st.write(f"{row.description}")
+                # st.write(row)
     
 
 
