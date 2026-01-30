@@ -27,9 +27,12 @@ The highest value an Attribute can be is limited by your Character's Level as sh
 
 
 ### Proficiency:
-Proficiency represents your skill with a variety of Skill and Equipment. Your Proficiency Bonus is equal to **1 + ½ your character's level (rounded down)**. If you are Proficient with a weapon, you add your Proficiency Bonus to the Attack Roll. You also add your Proficiency Bonus to Spell Attacks.   
+Proficiency represents your skill with a variety of Skill and Equipment. Your Proficiency Bonus is equal to **1 + ½ your character's level (rounded down)**. If you are Proficient with a weapon, you add your Proficiency Bonus to the Attack Roll.
 
 When using Armor or a Shield without Proficeincy, you have DIS on any Attribute Checks, Saving Throws, and Attack Checks.
+
+#### Skill Proficiency
+At Character Creation, you start with a set number of Skill Points. You expend Skill Points to gain Proficiency in a Skill or Tool. When you are proficient with a Skill or Tool, you add your Proficiency Bonus to those rolls.
 
 ### Rounding Rules:
 Always round down when calculating values, with a minimum result of 1. 
