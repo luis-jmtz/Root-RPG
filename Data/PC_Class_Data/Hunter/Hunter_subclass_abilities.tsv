@@ -1,3 +1,5 @@
 id	subclass	name	description	level	pp
 1	1	Pack Leader	Creatures of your choice can add a d4 to the first Attack they make against your Target.	3	0
-2	1	Coordinated Attack	Once per round, when you and an ally are Flanking your Target, if you land a successful attack, you or the ally can spend 1 AP for your ally to make an Attack as a Reaction.	3
+2	1	Coordinated Attack	Once per round, when you and an ally are Flanking your Target, if you land a successful attack, you or the ally can spend 1 AP for your ally to make an Attack as a Reaction.	3	.25
+3	2	Forceful Persuasion	You gain Proficiecy in your choice of the Threaten or Intimidation Skill. If you are already Proficient in that Skill, you instead gain Expertise in that Skill.	3	0
+4	2	Dead or Alive	When you select a Target for your Hunter's Mark choose one of the following options:\\n- Alive: You have ADV on Grapple Checks against the Target. If you are holding rope and spend 2 additional AP while Grappling your Target, the target becomes Restrained by the rope.\\n- Dead: The damage from your Hunter's Strike increases by 1.	3	0.33
