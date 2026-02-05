@@ -1,2 +1,6 @@
 id	name	description	level	pp
 1	Martial	Your start with 1 Focus Point and your FP increases as shown in the Bastard Class Table. You also known Manuevers as shown in the table.	0	0.1667
+2	Melee Weapon Proficiency	You are Proficieny with all Melee weapons.	0	0
+3	Military Shooter	You are Proficieny with Crossbows and Muskets.	0	0
+4	Soldier's Focus	You regain half of your FP when you perform 1 or more Maneuvers as part of an Action, provided you do not spend SP as part of that Action.	1	0
+5	
