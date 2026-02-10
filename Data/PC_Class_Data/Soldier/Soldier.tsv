@@ -3,4 +3,11 @@ id	name	description	level	pp
 2	Melee Weapon Proficiency	You are Proficieny with all Melee weapons.	0	0
 3	Military Shooter	You are Proficieny with Crossbows and Muskets.	0	0
 4	Soldier's Focus	You regain half of your FP when you perform 1 or more Maneuvers as part of an Action, provided you do not spend SP as part of that Action.	1	0
-5	
+5	Fighting Style	Choose 1 Weapon. Add +1 to any Attack you make using that type of weapon.	1	.28
+6	Second Wind	Once per Long Rest, you can spend 1 AP to regain a number of HP equal to your Proficiency	1	0
+7	Adaptive Tactics	When you roll for Initiative, and at the end of each of your turns, you gain a d8 Tactical Die if you don't already have one. You can spend a Tactical Die to gain one of the following Tactics:\\n- Assault: When you make an Attack, you can add the die to the Attack's result.\\n- Deflect: When you are Attacked, you can subtract the die from the Attack's result.	2	0
+8	Additional Feat	You gain 1 Feat of your choice.	2	0
+9	Martial Role	At level three you choose your subclass, known as your Martial Role.	3	0
+10	Additional Feat	You gain 1 Feat of your choice	4	0
+11	Second Attack	When you make Attacks in combat, you do not gain a stack of DIS until after your 2nd Attack that round.	5	.25
+12	Improved Fighting Style	Choose one of the following options:\\n- You add and additional +1 to the Attacks of the Weapon you chose for your Fighting Style.\\n- Choose an additional weapon, and add +1 to your Attacks with it.
