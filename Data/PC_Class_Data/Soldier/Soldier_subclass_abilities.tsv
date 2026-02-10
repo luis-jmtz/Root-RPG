@@ -1,7 +1,6 @@
 id	subclass	name	description	level	pp
-1	1	Titan's Grip	While Raging, you can wield Two-Handed weapons using only one hand.	3	0
-2	1	Jump Good	Your Jump Distance increases by 1.	3	0.17
-3	1	Quick to Anger	When you roll Initiative, you can spend 1 SP to immediately Rage.	3	0
-4	2	Not Down Yet	Once per Long Rest, the first time you are reduced to 0 or fewer Hit Points, you gain a a number of Temp HP equal to your Prime Attribute. These Temp HP are added before the any damage reaches your Vitality.	3	0.1
-5	2	Missed Me	Once per Long Rest, the first time your Vitality would be reduced by any source of damage, the damage is reduced by a number equal to your Prime Attribute.	3	0.1
-6	2	Mind your Business	You have ADV on Saves against the Charmed condition.	3	0.31
+1	1	Fighter's Resolve	When you use a Tactical Die, you gain the following benefit:\\n- Assault: The Attack deals +1 damage.\\n- Deflect: If the Attack misses, you can choose 1 creature within 1 Space of you, that creature takes 1 damage of the damage type of the attack.	3	0
+2	1	Creative Combatant	When you make a Physical Save or Check in Combat, you can use a Tactical Die and add it to your Save or Check.	3	0
+3	2	Adrenaline Boost	When you use your Second Wind, you gain +5 to your next Attack.	3	0
+4	2	Cut Through	Whenever you land a Heavy Hit with a weapon Attack, you ignore the target's Physical Damage Reduction	3	0
+5	2	Unyielding Spirit	While Bloodied, you gain 1 Temp HP at the start of each of your turns.	3	0
