@@ -19,23 +19,42 @@ current_dir = Path(__file__).parent
 
 # ------------------------------
 
-# Get the directory where your script is located
-current_dir = Path(__file__).parent
+from pathlib import Path
 
-# Debug: Print current directory and check if files exist
-st.write(f"Current directory: {current_dir}")
-st.write(f"Files in current directory: {list(current_dir.glob('*'))}")
-st.write(f"Files in Rules_Text folder: {list(current_dir.glob('Rules_Text/*'))}")
-
-# Converted paths
+# Convert your Rules_Text paths (already done)
 core_path = current_dir / 'Rules_Text' / 'Core_Rules.md'
 condition_path = current_dir / 'Rules_Text' / 'Conditions.md'
 equip_path = current_dir / 'Rules_Text' / 'Equipment_Rules.md'
 skills_path = current_dir / 'Rules_Text' / 'Skills.md'
 
-# Debug: Print the actual paths
-st.write(f"Core path: {core_path}")
-st.write(f"Does core path exist? {core_path.exists()}")
+# Converts  Data paths
+armor_path = current_dir / 'Data' / 'armor.tsv'
+weapons_path = current_dir / 'Data' / 'weapons.tsv'
+weapon_props_path = current_dir / 'Data' / 'weapon_properties.tsv'
+shields_path = current_dir / 'Data' / 'shields.tsv'
+basic_equipment_path = current_dir / 'Data' / 'shields.tsv'
+
+
+
+if 'armor_df' not in st.session_state:
+    st.session_state.armor_df = pd.read_csv(armor_path, sep="\t")
+armors = st.session_state.armor_df
+
+if 'weapons_df' not in st.session_state:
+    st.session_state.weapons_df = pd.read_csv(weapons_path, sep="\t")
+weapons = st.session_state.weapons_df
+
+if 'properties_df' not in st.session_state:
+    st.session_state.properties_df = pd.read_csv(weapon_props_path, sep="\t")
+properties = st.session_state.properties_df
+
+if 'shield_df' not in st.session_state:
+    st.session_state.shield_df = pd.read_csv(shields_path, sep="\t")
+shields = st.session_state.shield_df
+
+if 'basic_df' not in st.session_state:
+    st.session_state.basic_df = pd.read_csv(basic_equipment_path, sep="\t")
+basic = st.session_state.basic_df
 
 
 
@@ -111,25 +130,25 @@ combat_rules = st.session_state.combat
 
 # -------------------- dataframe loading -------------------
 
-if 'armor_df' not in st.session_state:
-    st.session_state.armor_df = pd.read_csv(r"Data\armor.tsv", sep="\t")
-armors = st.session_state.armor_df
+# if 'armor_df' not in st.session_state:
+#     st.session_state.armor_df = pd.read_csv(r"Data\armor.tsv", sep="\t")
+# armors = st.session_state.armor_df
 
-if 'weapons_df' not in st.session_state:
-    st.session_state.weapons_df = pd.read_csv(r"Data\weapons.tsv", sep="\t")
-weapons = st.session_state.weapons_df
+# if 'weapons_df' not in st.session_state:
+#     st.session_state.weapons_df = pd.read_csv(r"Data\weapons.tsv", sep="\t")
+# weapons = st.session_state.weapons_df
 
-if 'properties_df' not in st.session_state:
-    st.session_state.properties_df = pd.read_csv(r"Data\weapon_properties.tsv", sep="\t")
-properties = st.session_state.properties_df
+# if 'properties_df' not in st.session_state:
+#     st.session_state.properties_df = pd.read_csv(r"Data\weapon_properties.tsv", sep="\t")
+# properties = st.session_state.properties_df
 
-if 'shield_df' not in st.session_state:
-    st.session_state.shield_df = pd.read_csv(r"Data\shields.tsv", sep="\t")
-shields = st.session_state.shield_df
+# if 'shield_df' not in st.session_state:
+#     st.session_state.shield_df = pd.read_csv(r"Data\shields.tsv", sep="\t")
+# shields = st.session_state.shield_df
 
-if 'basic_df' not in st.session_state:
-    st.session_state.basic_df = pd.read_csv(r"Data\basic_equipment.tsv", sep="\t")
-basic = st.session_state.basic_df
+# if 'basic_df' not in st.session_state:
+#     st.session_state.basic_df = pd.read_csv(r"Data\basic_equipment.tsv", sep="\t")
+# basic = st.session_state.basic_df
 
 
 
