@@ -2,11 +2,29 @@ import streamlit as st
 import pandas as pd
 import os
 
-# rules text files
-core_path = r"Rules_Text\Core_Rules.md"
-condition_path = r"Rules_Text\Conditions.md"
-equip_path = r"Rules_Text\Equipment_Rules.md"
-skills_path = r"Rules_Text\Skills.md"
+# rules text files for Python
+# core_path = r"Rules_Text\Core_Rules.md"
+# condition_path = r"Rules_Text\Conditions.md"
+# equip_path = r"Rules_Text\Equipment_Rules.md"
+# skills_path = r"Rules_Text\Skills.md"
+
+# for deployed app
+from pathlib import Path
+
+# Get the directory where your script is located
+current_dir = Path(__file__).parent
+
+# Converted paths
+core_path = current_dir / 'Rules_Text' / 'Core_Rules.md'
+condition_path = current_dir / 'Rules_Text' / 'Conditions.md'
+equip_path = current_dir / 'Rules_Text' / 'Equipment_Rules.md'
+skills_path = current_dir / 'Rules_Text' / 'Skills.md'
+
+
+
+
+
+
 
 
 # --------------------------- opens rules text --------------- #
