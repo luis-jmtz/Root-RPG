@@ -17,7 +17,7 @@ current_dir = Path(__file__).parent
 
 
 
-# ------------------------------
+# -------------------------------
 
 from pathlib import Path
 
