@@ -126,8 +126,37 @@ skill_rules = st.session_state.skill_rules
 # combat_rules = st.session_state.combat
 
 
+# def load_markdown_files(folder_path):
+#     """Load all markdown files from a folder and return list of strings"""
+#     markdown_texts = []
+    
+#     # Convert to Path object if it's a string
+#     folder = Path(folder_path)
+    
+#     # Check if folder exists
+#     if not folder.exists():
+#         st.warning(f"Folder not found: {folder}")
+#         return markdown_texts
+    
+#     # Get all .md files (case insensitive)
+#     md_files = list(folder.glob('*.md')) + list(folder.glob('*.MD'))
+    
+#     # Read each file
+#     for file_path in md_files:
+#         try:
+#             with open(file_path, 'r', encoding='utf-8') as file:
+#                 content = file.read()
+#                 markdown_texts.append(content)
+#         except Exception as e:
+#             st.error(f"Error reading {file_path.name}: {e}")
+
+#     markdown_texts.sort()
+    
+#     return markdown_texts
+
+
 def load_markdown_files(folder_path):
-    """Load all markdown files from a folder and return list of strings"""
+    """Load all markdown files from a folder and return list of strings, sorted by filename"""
     markdown_texts = []
     
     # Convert to Path object if it's a string
@@ -138,8 +167,11 @@ def load_markdown_files(folder_path):
         st.warning(f"Folder not found: {folder}")
         return markdown_texts
     
-    # Get all .md files (case insensitive)
+    # Get all .md files and sort them naturally (by filename)
     md_files = list(folder.glob('*.md')) + list(folder.glob('*.MD'))
+    
+    # Sort files naturally - this will order 0_*, 1_*, 2_*, etc.
+    md_files.sort(key=lambda x: x.name)
     
     # Read each file
     for file_path in md_files:
@@ -151,6 +183,8 @@ def load_markdown_files(folder_path):
             st.error(f"Error reading {file_path.name}: {e}")
     
     return markdown_texts
+
+
 
 # Get the directory where your script is located
 current_dir = Path(__file__).parent
@@ -270,6 +304,9 @@ with p2:
 # Conditions
 with p3:
     st.markdown(conditions)
+
+# for x in combat_rules:
+#     st.write(x)
 
 
 # Combat Rules
