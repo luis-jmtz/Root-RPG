@@ -27,10 +27,11 @@ The number of starting skill points you get depends on your Intelligence score.
 *Starting Skill Points* = 5 + Intelligence (if your score is negative, you do subtract from the total)
 
 
-#### Step 4: Hit Points
+#### Step 4: Hit Points and Vitality
 
 *Starting HP Formula*: 6 + Character Level + Might
 
+Your Vitality is equal to your Prime.
 
 #### Step 5: Focus Points
 Martial Characters start with 1 Focus Point.
