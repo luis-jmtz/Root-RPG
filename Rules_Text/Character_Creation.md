@@ -35,7 +35,7 @@ The number of starting skill points you get depends on your Intelligence score.
 #### Step 5: Focus Points
 Martial Characters start with 1 Focus Point.
 
-## Step 6: Armor Class
+#### Step 6: Armor Class
 Your Armor Class represents how difficult it is for hit or damage you. 
 
 Armor Class = 8 + Proficiency + Agility + Armor Bonus
@@ -49,7 +49,12 @@ Assuming your Prime Modifier is 3. You have the following stats for your charact
 - Speed: 5 (can be changed by Ancestry)
 - Jump Distance: Equal to your Agility (min. of 1)
 
-#### Step 8: Species and Class
+#### Step 8: Quirks
+Choose 1 to 3 Quirks. Quirks are roleplay-focused abilities that affect how your character behaves, helping you in certain scenarios and weakening you in others.
+
+
+
+#### Step 9: Species and Class
 Choose an Species. This species represents your biology and how you've developed as you've grown. 
 
 Choose a Class. Your class represents your training and experience. This is represented by:
