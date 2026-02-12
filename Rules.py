@@ -32,7 +32,7 @@ armor_path = current_dir / 'Data' / 'armor.tsv'
 weapons_path = current_dir / 'Data' / 'weapons.tsv'
 weapon_props_path = current_dir / 'Data' / 'weapon_properties.tsv'
 shields_path = current_dir / 'Data' / 'shields.tsv'
-basic_equipment_path = current_dir / 'Data' / 'shields.tsv'
+basic_equipment_path = current_dir / 'Data' / 'basic_equipment.tsv'
 
 
 
@@ -57,7 +57,7 @@ if 'basic_df' not in st.session_state:
 basic = st.session_state.basic_df
 
 
-
+# st.write(basic)
 
 # ---------------------
 
