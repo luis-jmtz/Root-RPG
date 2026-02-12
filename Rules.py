@@ -93,39 +93,75 @@ skill_rules = st.session_state.skill_rules
 # ------------------ Combat Rules -------------------------- #
 
 
+# def load_markdown_files(folder_path):
+#     """Load all markdown files from a folder and return list of strings"""
+#     markdown_texts = []
+    
+#     # Check if folder exists
+#     if not os.path.exists(folder_path):
+#         return markdown_texts
+    
+#     # Get all .md files
+#     md_files = [f for f in os.listdir(folder_path) if f.endswith('.md')]
+#     # add a file for every file in the folder directory if ti ends with .md
+    
+#     # Read each file
+#     for filename in md_files:
+#         file_path = os.path.join(folder_path, filename)
+#         try:
+#             with open(file_path, 'r', encoding='utf-8') as file:
+#                 content = file.read()
+#                 markdown_texts.append(content)
+#         except Exception as e:
+#             st.error(f"Error reading {filename}: {e}")
+    
+#     return markdown_texts
+
+# combat_folder = r"Rules_Text\Combat_Rules"
+
+
+# if 'combat' not in st.session_state:
+#     st.session_state.combat = load_markdown_files(combat_folder)
+
+# combat_rules = st.session_state.combat
+
+
 def load_markdown_files(folder_path):
     """Load all markdown files from a folder and return list of strings"""
     markdown_texts = []
     
+    # Convert to Path object if it's a string
+    folder = Path(folder_path)
+    
     # Check if folder exists
-    if not os.path.exists(folder_path):
+    if not folder.exists():
+        st.warning(f"Folder not found: {folder}")
         return markdown_texts
     
-    # Get all .md files
-    md_files = [f for f in os.listdir(folder_path) if f.endswith('.md')]
-    # add a file for every file in the folder directory if ti ends with .md
+    # Get all .md files (case insensitive)
+    md_files = list(folder.glob('*.md')) + list(folder.glob('*.MD'))
     
     # Read each file
-    for filename in md_files:
-        file_path = os.path.join(folder_path, filename)
+    for file_path in md_files:
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
                 content = file.read()
                 markdown_texts.append(content)
         except Exception as e:
-            st.error(f"Error reading {filename}: {e}")
+            st.error(f"Error reading {file_path.name}: {e}")
     
     return markdown_texts
 
-combat_folder = r"Rules_Text\Combat_Rules"
+# Get the directory where your script is located
+current_dir = Path(__file__).parent
 
+# Use pathlib for the folder path
+combat_folder = current_dir / 'Rules_Text' / 'Combat_Rules'
 
 if 'combat' not in st.session_state:
     st.session_state.combat = load_markdown_files(combat_folder)
 
 combat_rules = st.session_state.combat
-
-
 
 
 # -------------------- dataframe loading -------------------
